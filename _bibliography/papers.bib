@@ -1,115 +1,55 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+@string{frontiers = {Frontiers in Digital Health}}
+@string{scirep = {Scientific Reports}}
+@string{cmc = {Computers, Materials & Continua (CMC), Tech Science Press}}
 
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
+@article{fareed2025ethical,
+  abbr={Published},
+  status={published},
+  selected={true},
+  title={A Systematic Review of Ethical Considerations of Large Language Models in Healthcare and Medicine},
+  author={Fareed, Muhammad and Fatima, Madeeha and Uddin, Jamal and Ahmed, Adeel and Sattar, Muhammad Awais},
+  journal={Frontiers in Digital Health &middot; IF 3.8 &middot; Q1},
+  year={2025},
+  publisher={Frontiers},
+  doi={10.3389/fdgth.2025.1653631},
+  html={https://doi.org/10.3389/fdgth.2025.1653631},
+  bibtex_show={true},
+  abstract={First author. A PRISMA 2020 systematic review of the ethical risks of deploying large language models in healthcare and medicine — bias, opaque decision-making, privacy leakage, and clinical misinformation. Five databases; 316 records screened; 42 full texts assessed; 27 studies (2017–June 2025) included. Bias and fairness were the most-discussed concern, followed by safety/reliability and transparency. The paper proposes a four-layer ethical integration framework spanning regulatory safeguards, technical safeguards, human oversight, and transparency/accountability.}
 }
 
-@book{einstein1956investigations,
-  bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+@article{fareed2026cxrgsvlm,
+  abbr={Under Review},
+  status={under_review},
+  selected={true},
+  title={CXRG-SVLM: A Parameter-Efficient Small Vision-Language Model for Multi-View Chest X-ray Report Generation in Resource-Constrained Environments},
+  author={Fareed, Muhammad and Uddin, Jamal and Ahmed, Adeel and Sayyid, Abdul Hannan and Sattar, Muhammad Awais},
+  journal={Scientific Reports &middot; Under review},
+  year={2026},
+  bibtex_show={true},
+  abstract={First author; MS thesis work. An efficient small vision-language model for automated chest X-ray report generation, built for on-premise, privacy-compliant deployment on modest hardware. Architecture: a frozen RAD-DINO image encoder with a 4-bit quantized Qwen2.5-3B-Instruct language model, adapted using 4-bit QLoRA that trains only 38.1M of 3.9B parameters (0.97% trainable). A multi-view fusion module integrates frontal and lateral radiographs, queried through a continuous latent retrieval mechanism to reduce hallucination. On the Indiana University Chest X-ray dataset: ROUGE-L 0.3116, METEOR 0.2530, macro-averaged clinical entity F1 0.4867; 7.8 seconds per report on a single 16 GB GPU. Honest limitations: single-center dataset; weaker detection of subtle or underrepresented findings.}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
-  bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+@article{ahmed2026punjabi,
+  abbr={Co-author},
+  status={under_review},
+  title={Optimizing Multilingual BERT for Punjabi Sentiment Analysis using PEFT Techniques: Balancing Accuracy and Parameter Efficiency},
+  author={Ahmed, Adeel and Riaz, Saman and Fareed, Muhammad},
+  journal={Computers, Materials & Continua (CMC), Tech Science Press &middot; Under review},
+  year={2026},
+  bibtex_show={true},
+  abstract={Third author (contribution: evaluation, manuscript review and rewriting). The first systematic parameter-efficient fine-tuning benchmark for Punjabi sentiment analysis, comparing six PEFT methods against full fine-tuning on Multilingual BERT. LoRA reached 85% accuracy while training only 1.07% of parameters (best accuracy/efficiency balance); IA-cubed reached 75% at 0.01% trainable parameters (most resource-efficient, suited to edge deployment), versus 90% for full fine-tuning. IF 1.7 (2024); Scopus CiteScore 6.6 (2025).}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
-}
-
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
-  bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
+@article{fareed2026lstm,
+  abbr={In Prep},
+  status={in_preparation},
+  title={A Systematic Review of LSTM-Based Deep Learning Models in Healthcare and Medicine},
+  author={Fareed, Muhammad and Uddin, Jamal and Ahmed, Adeel and Nauman, Muhammad Adnan and Khan, Nasir and Billah, Masum and Sattar, Muhammad Awais},
+  journal={In preparation &middot; target: Frontiers},
+  year={2026},
+  bibtex_show={true},
+  abstract={First author. A PRISMA 2020 systematic review consolidating LSTM applications across healthcare — cardiovascular, neurological, epidemiological, and clinical NLP tasks. 101 high-quality studies included. The review maps applications, data modalities, tooling, and optimizers, and identifies six advancement clusters, including model compression and transfer learning for deployment efficiency. Manuscript in preparation; not yet submitted.}
 }

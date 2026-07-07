@@ -1,189 +1,238 @@
-cv:
-  name: Albert Einstein
-  label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
-  image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+- title: General Information
+  type: map
+  contents:
+    - name: Full Name
+      value: Muhammad Fareed
+    - name: Date of Birth
+      value: 15 August 1994
+    - name: Nationality
+      value: Pakistani
+    - name: Location
+      value: Lahore, Pakistan
+    - name: Email
+      value: mfareedkhan012@gmail.com
+    - name: Languages
+      value: English (C1, professional working) · Urdu (native) · Punjabi (native)
 
-  social_networks:
-    - network: X
-      username: AlbertEinstein
-    - network: GitHub
-      username: example
-    - network: LinkedIn
-      username: example
+- title: Research Interests
+  type: nested_list
+  contents:
+    - title: Methods
+      items:
+        - Parameter-efficient fine-tuning (QLoRA / LoRA), quantization, and knowledge distillation
+        - Vision–language models, multimodal fusion, and small / edge-deployable models
+        - Transfer learning · privacy-preserving, on-premise deployment
+        - Systematic evidence synthesis (PRISMA 2020; Kitchenham & Charters)
+    - title: Application domains
+      items:
+        - Efficient medical AI and automated clinical decision support
+        - Low-resource-language NLP
+        - Ethical governance of clinical AI systems
 
-  address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
-    countryCode: US
+- title: Education
+  type: time_table
+  contents:
+    - title: MS in Data Science
+      institution: Riphah School of Computing & Innovation (RSCI), Riphah International University, Lahore
+      year: 2024–2026
+      description:
+        - CGPA 4.0/4.0 — batch topper (first position, Spring 2024 cohort); full scholarship throughout
+        - Dean's Honor List (Certificate of Merit Achievement), Spring 2024
+        - "Thesis: Retrieval-Augmented, Parameter-Efficient Fine-Tuning of a Vision–Language Model for Chest X-ray Report Generation (supervisor: Dr. Jamal Uddin)"
+        - "Coursework (A/A+): Machine Learning, Research Methods, Advanced Database Systems, Cloud Computing Infrastructure & Services, Professional Ethics-I, Deep Learning, Statistical & Mathematical Methods, Tools & Techniques in Data Science, Big Data Analytics"
+    - title: "B.Ed. Secondary (1.5-Year) — Specialisation: ICT in Education"
+      institution: Virtual University of Pakistan, Lahore
+      year: 2021–2024
+      description:
+        - First Division — CGPA 2.98/4.0 (70.97%)
+    - title: BS (Hons) in Mathematics
+      institution: University of Education, Township Campus, Lahore
+      year: 2012–2016
+      description:
+        - First Division — CGPA 2.64/4.0 (67.45%)
+    - title: F.Sc Pre-Engineering (HSSC)
+      institution: Punjab College of Science, Muslim Town Campus, Lahore
+      year: 2010–2012
+      description:
+        - Grade A (809/1100, ≥73.5%) — 100% merit scholarship
+    - title: Secondary School Certificate — Science (SSC)
+      institution: Aziz Memorial Science High School, Lahore
+      year: 2008–2010
+      description:
+        - Grade A+ (954/1050, ≥90.9%) — first position at school level
 
-  sections:
-    Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
-        studyType: PhD
-        start_date: 1900
-        end_date: 1905
-        score: ""
-        courses: "Theory of Relativity"
-        highlights:
-          - Description 1.
-          - Description 2.
+- title: Publications
+  type: time_table
+  contents:
+    - title: "A Systematic Review of Ethical Considerations of Large Language Models in Healthcare and Medicine"
+      year: 2025
+      description:
+        - "Fareed, M. (first author), Fatima, M., Uddin, J., Ahmed, A., & Sattar, M. A."
+        - "Frontiers in Digital Health — Published · IF 3.8 · Q1 · DOI: 10.3389/fdgth.2025.1653631"
+    - title: "CXRG-SVLM: A Parameter-Efficient Small Vision-Language Model for Multi-View Chest X-ray Report Generation in Resource-Constrained Environments"
+      year: 2026
+      description:
+        - "Fareed, M. (first author), Uddin, J., Ahmed, A., Sayyid, A. H., & Sattar, M. A."
+        - "Scientific Reports — under review (MS thesis work)"
+    - title: "Optimizing Multilingual BERT for Punjabi Sentiment Analysis using PEFT Techniques"
+      year: 2026
+      description:
+        - "Ahmed, A., Riaz, S., & Fareed, M. (third author)"
+        - "Computers, Materials & Continua (CMC), Tech Science Press — under review"
+    - title: "A Systematic Review of LSTM-Based Deep Learning Models in Healthcare and Medicine"
+      year: 2026
+      description:
+        - "Fareed, M. (first author), Uddin, J., Ahmed, A., Nauman, M. A., Khan, N., Billah, M., & Sattar, M. A."
+        - "In preparation (target: Frontiers) — not yet submitted"
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
-        highlights:
-          - Description 1.
-          - Description 2.
+- title: Research & Technical Projects
+  type: time_table
+  contents:
+    - title: Roman Urdu Small Language Model (RU-SLM)
+      description:
+        - 4-bit QLoRA on an 8B model for low-resource conversational NLP; ~74% reduction in trainable parameters with deployable inference and a reproducible pipeline
+    - title: Text Summarization Small Language Model (TS-SLM)
+      description:
+        - LoRA + 4-bit quantization on Mistral-7B for length-controlled abstractive news summarization; quality and hallucination evaluated via ROUGE and BERTScore
+    - title: Multilingual Sentiment & Language Detection
+      description:
+        - PEFT-adapted Gemma-3 and Qwen-3 for joint language identification and sentiment classification across Urdu and Roman Urdu, with structured outputs and documented error modes
 
-    Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
-        highlights:
-          - Relativity
-          - Description 2.
+- title: Skills & Technical Expertise
+  type: nested_list
+  contents:
+    - title: Programming
+      items:
+        - Python (primary) · LaTeX
+    - title: Frameworks & Libraries
+      items:
+        - PyTorch · TensorFlow · Hugging Face Transformers & PEFT · Keras
+    - title: Efficient Adaptation & Deployment
+      items:
+        - QLoRA · LoRA · AdaLoRA · 4-bit Quantization · Knowledge Distillation · On-premise deployment · Edge-optimised inference · Privacy-preserving model design
+    - title: Modelling & Research Methods
+      items:
+        - Vision–Language Models · LLMs · Multimodal Fusion · Transfer Learning · PEFT · NLP · Computer Vision · Generative AI · Systematic Literature Review (PRISMA 2020; Kitchenham & Charters 2007)
+    - title: Infrastructure & Data
+      items:
+        - Cloud Computing · DBMS · SQL · Google Colab · CUDA/cuDNN
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
-        highlights:
-          - Description 1.
-          - Description 2.
+- title: Teaching & Professional Experience
+  type: time_table
+  contents:
+    - title: Science & Mathematics Teacher (BPS-14)
+      institution: Govt. Elementary School, Attari Saroba, Lahore
+      year: 2018–present
+      description:
+        - Substantive permanent civil-service post; held concurrently with MS studies, thesis research, and four peer-reviewed papers (2024–2026)
+    - title: Digital Marketing & Web Development Trainer
+      institution: Digiversity Training Institute, Lahore
+      year: 2022–2023
+    - title: Social Media Marketing Manager
+      institution: Converrsion Marketing Agency, Lahore
+      year: 2021–2022
+    - title: Mathematics & Physics Instructor (intermediate & undergraduate)
+      institution: Leads Group of Colleges, Lahore
+      year: 2015–2017
+    - title: Private O/A-Level Mathematics Tutor
+      institution: Independent
+      year: 2014–2015
+    - title: Science & Mathematics Teacher (matriculation)
+      institution: Yasin Public High School, Lahore
+      year: 2012–2014
 
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
+- title: Awards & Honours
+  type: time_table
+  contents:
+    - title: Inaugural cohort — AI-Driven Enterprise Product Development Programme
+      institution: Prime Minister's Youth Programme (PMYP) × Stanford Engineering CGOE
+      year: 2025
+      description:
+        - Competitive national selection; cohort developed and deployed AI-driven enterprise solutions under Stanford faculty guidance
+    - title: First position (batch topper), MS Data Science — Spring 2024 cohort
+      institution: RSCI, Riphah International University
+      year: 2024
+      description:
+        - CGPA 4.0/4.0; full scholarship throughout
+    - title: Dean's Honor List (Certificate of Merit Achievement), MS Data Science
+      institution: RSCI, Riphah International University
+      year: 2024
+      description:
+        - Spring 2024
+    - title: Best Teaching Performance Award
+      institution: Progressive Education Network (PEN) NGO, Lahore
+      year: 2024
+    - title: 100% merit scholarship — F.Sc Pre-Engineering
+      institution: Punjab College of Science, Lahore
+      year: 2010–2012
+    - title: First position at school level — SSC (Science, Grade A+)
+      institution: Aziz Memorial Science High School, Lahore
+      year: 2010
+    - title: Prime Minister's Laptop Scheme (academic merit)
+      year: 2012
 
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
+- title: Certifications & Training
+  type: time_table
+  contents:
+    - title: Innovation-Driven Product Development Using AI
+      institution: Stanford Engineering CGOE
+      year: 2026
+    - title: "Deep Learning Specialization (5 courses)"
+      institution: DeepLearning.AI
+      year: 2025
+    - title: Data Science Ethics
+      institution: University of Michigan
+      year: 2025
+    - title: Generative AI Engineering and Fine-tuning Transformers
+      institution: IBM
+      year: 2025
 
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
+- title: Seminars, Conferences & Workshops
+  type: time_table
+  contents:
+    - title: "COLLOQUIUM: Beyond the Cloud — Shaping the Next Era of Computing"
+      institution: CRIDSC × RSCI, Lahore
+      year: 2026
+    - title: ICCI 2025 — International Conference on Computing & Innovation (competed in 3MT)
+      institution: RSCI, Lahore
+      year: 2025
+    - title: Poster Presentation, RSCI Research Week
+      institution: RSCI, Lahore
+      year: 2025
+    - title: Online Seminar on Research Trends and Advances
+      institution: RSCI, Lahore
+      year: 2024
 
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+- title: Professional Teaching Trainings
+  type: time_table
+  contents:
+    - title: Six-Week Higher-Order Thinking Skills Programme
+      institution: Punjab Education, Curriculum, Training and Assessment Authority (PECTAA), Lahore
+      year: 2025
+    - title: Four-Week Induction Training Programme
+      institution: Quaid-e-Azam Academy for Educational Development (QAED), Lahore
+      year: 2018
 
-    Awards:
-      - title: Nobel Prize in Physics
-        authors:
-          - "Royal Swedish Academy of Sciences"
-        date: 1921-11-01
-        awarder: Royal Swedish Academy of Sciences
-        url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
-        summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
+- title: Volunteer Work
+  type: time_table
+  contents:
+    - title: Vice President — Tameer Kadah Foundation (TKF), Lahore
+      year: 2018–2020
+      description:
+        - Welfare and development initiatives for children with physical and cognitive disabilities; co-managed organisational programmes and community outreach
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
-
-    Publications:
-      - title: Zur Elektrodynamik bewegter Körper
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
-
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
-        authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
-
-    Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Languages:
-      - name: German
-        summary: "Native speaker"
-
-      - name: English
-        summary: "Fluent"
-
-    Interests:
-      - name: Physics
-        icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
-
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
-
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
-
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
-
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
-
-    References:
-      - name: Professor John Doe
-        icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
-
-      - name: Professor Jane Smith
-        icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+- title: Referees
+  type: time_table
+  contents:
+    - title: Dr. Jamal Uddin
+      institution: Assistant Professor; Head of Dept., AI & Data Science — RSCI, Riphah International University
+      description:
+        - "MS thesis supervisor; taught Deep Learning and Statistical & Mathematical Methods · jamal.din@riphah.edu.pk"
+    - title: Dr. Muhammad Yaseen
+      institution: Associate Professor; Head of Dept., Software Engineering — RSCI, Riphah International University
+      description:
+        - "Taught Advanced Database Systems and Cloud Computing Infrastructure & Services · muhammad.yaseen@riphah.edu.pk"
+    - title: Dr. Muhammad Awais Sattar
+      institution: Postdoctoral Researcher — Luleå University of Technology, Sweden
+      description:
+        - "Taught Tools & Techniques in Data Science, Programming Fundamentals, and Research Methods; corresponding author on two papers · muhammad.awais.sattar@associated.ltu.se"

@@ -1,34 +1,37 @@
 ---
 layout: about
-title: about
+title: home
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+nav: true
+nav_order: 1
+subtitle: Efficient, deployable AI for resource-constrained settings — <a href='/research/'>parameter-efficient fine-tuning, quantization, and multimodal models</a>, with healthcare as my primary proving ground.
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>MS Data Science &middot; Batch topper</p>
+    <p>Lahore, Pakistan</p>
+    <p><a href="mailto:mfareedkhan012@gmail.com">mfareedkhan012@gmail.com</a></p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
+selected_papers: true
+social: true
+news: true
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  scrollable: true
+  limit: 5
+latest_posts:
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am **Muhammad Fareed**, an MS Data Science researcher (batch topper, CGPA 4.0/4.0) at the Riphah School of Computing & Innovation, Lahore. My work is about making advanced AI **deployable where it is normally out of reach** — efficient, on-premise, privacy-preserving models that run on modest hardware.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I work at two levels. The **methods** are domain-agnostic: parameter-efficient fine-tuning (QLoRA/LoRA), quantization, small and edge-friendly models, multimodal fusion, transfer learning, and systematic evidence synthesis. The **proving ground** is healthcare and low-resource-language AI — where privacy constraints and limited compute make efficiency non-negotiable. The methods generalize beyond it.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My first-author systematic review appears in _Frontiers in Digital Health_ (Q1), and my thesis system — a small vision–language model that generates chest X-ray reports on a single consumer GPU — is under review at _Scientific Reports_.
+
+**Selected projects:** [RU-SLM](/projects/), [TS-SLM](/projects/), and [multilingual sentiment detection](/projects/) — a common thread of efficient adaptation of small models for deployment without specialized hardware. See all on the [Projects](/projects/) page.
+
+I am **open to PhD positions and research / ML roles from Fall 2026.** The fastest way to reach me is [email](mailto:mfareedkhan012@gmail.com) — more on the [Contact](/contact/) page.
