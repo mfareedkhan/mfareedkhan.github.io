@@ -15,7 +15,7 @@ I develop and adapt **small vision–language models and language models** using
 
 I frame this work at two levels. At the **method level** — broad and domain-agnostic — the contribution is efficient, deployable AI under real-world constraints: PEFT, quantization, small/edge models, multimodal fusion, and trustworthy, ethically governed systems, supported by rigorous systematic evidence synthesis. At the **application level**, healthcare and low-resource-language AI are my primary proving ground: on-premise, privacy-preserving clinical decision support and NLP for languages with no large labelled corpora. Healthcare is where I demonstrate the methods; it is not their ceiling.
 
-I also care about the _governance_ side of deployable AI. My published systematic review maps the ethical risks of large language models in medicine and proposes a framework for integrating regulatory, technical, human-oversight, and transparency safeguards — because a model is only truly deployable if it is also safe and accountable.
+I also care about the *governance* side of deployable AI. My published systematic review maps the ethical risks of large language models in medicine and proposes a framework for integrating regulatory, technical, human-oversight, and transparency safeguards — because a model is only truly deployable if it is also safe and accountable.
 
 ## Research areas
 
@@ -29,16 +29,11 @@ In plain terms: a small vision–language model that reads chest X-rays and draf
 
 The system pairs a frozen RAD-DINO image encoder with a 4-bit quantized Qwen2.5-3B-Instruct language model, adapted with **4-bit QLoRA that trains just 0.97% of parameters** (38.1M of 3.9B). A multi-view fusion module combines frontal and lateral radiographs and queries them through a continuous latent retrieval mechanism, which reduces hallucination compared with retrieving discrete historical text.
 
-**Results on the Indiana University Chest X-ray dataset:**
-
-- ROUGE-L **0.3116**, METEOR **0.2530**
-- Macro-averaged clinical entity F1 **0.4867** (per-finding: normal 0.9758, pleural effusion 0.8474, pneumothorax 0.8059)
-- **7.8 seconds per report**, full pipeline on a **single 16 GB GPU**
-- Surpasses baselines such as R2Gen
+**Headline results (Indiana University Chest X-ray dataset):** the system reaches ROUGE-L **0.3116** and METEOR **0.2530**, surpassing established baselines such as **R2Gen** — while training only **0.97% of parameters**, running at **7.8 seconds per report on a single 16 GB GPU.** Those last two numbers are the point: state-of-the-art-adjacent quality on hardware a hospital can actually afford.
 
 **Honest limitations** (stated because they matter): the evaluation uses a single-center dataset; detection of subtle or underrepresented findings such as cardiomegaly and pulmonary edema is weaker; and the multi-view setup relies on paired frontal/lateral views.
 
-This work is under review at _Scientific Reports_. Full publication details are on the [Publications](/publications/) page.
+This work is under review at *Scientific Reports*. Full publication details are on the [Publications](/publications/) page.
 
 ## Where I want to take this
 

@@ -2,8 +2,6 @@
 layout: about
 title: home
 permalink: /
-nav: true
-nav_order: 1
 subtitle: Efficient, deployable AI for resource-constrained settings — <a href='/research/'>parameter-efficient fine-tuning, quantization, and multimodal models</a>, with healthcare as my primary proving ground.
 
 profile:
@@ -26,11 +24,11 @@ latest_posts:
   enabled: false
 ---
 
-I am **Muhammad Fareed**, an MS Data Science researcher (batch topper, CGPA 4.0/4.0) at the Riphah School of Computing & Innovation, Lahore. My work is about making advanced AI **deployable where it is normally out of reach** — efficient, on-premise, privacy-preserving models that run on modest hardware.
+I am **Muhammad Fareed**, a machine learning and artificial intelligence researcher working on efficient, deployable AI. I recently completed my **MS in Data Science** (batch topper, CGPA 4.0/4.0) at the Riphah School of Computing & Innovation, Lahore. My work is about making advanced AI **deployable where it is normally out of reach** — efficient, on-premise, privacy-preserving models that run on modest hardware.
 
 I work at two levels. The **methods** are domain-agnostic: parameter-efficient fine-tuning (QLoRA/LoRA), quantization, small and edge-friendly models, multimodal fusion, transfer learning, and systematic evidence synthesis. The **proving ground** is healthcare and low-resource-language AI — where privacy constraints and limited compute make efficiency non-negotiable. The methods generalize beyond it.
 
-My first-author systematic review appears in _Frontiers in Digital Health_ (Q1), and my thesis system — a small vision–language model that generates chest X-ray reports on a single consumer GPU — is under review at _Scientific Reports_.
+My first-author systematic review appears in *Frontiers in Digital Health* (Q1), and my thesis system — a small vision–language model that generates chest X-ray reports on a single consumer GPU — is under review at *Scientific Reports*.
 
 **Selected projects:** [RU-SLM](/projects/), [TS-SLM](/projects/), and [multilingual sentiment detection](/projects/) — a common thread of efficient adaptation of small models for deployment without specialized hardware. See all on the [Projects](/projects/) page.
 

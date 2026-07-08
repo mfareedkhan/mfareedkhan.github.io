@@ -25,10 +25,10 @@ Teaching is not a side note to my research profile — it is where the communica
 
 Verified credentials that support my research focus:
 
-- **Innovation-Driven Product Development Using AI** — Stanford Engineering CGOE (2026)
-- **Deep Learning Specialization** (5 courses) — DeepLearning.AI (2025)
-- **Generative AI Engineering and Fine-tuning Transformers** — IBM (2025)
-- **Data Science Ethics** — University of Michigan (2025)
+- **Innovation-Driven Product Development Using AI** — Stanford Engineering CGOE (2026) · [Verify ✓](https://digitalcredential.stanford.edu/check/94FB98C8B9AE20FA6CE035EDF12D5CDC3C68320E523B2AC3B96DA2A73F1335B1cytjZUhXRHM4K0NMVDFudXZtaGRIQzJzd3J6SFllNDhVbkV5VE5uQzQva0h2eTRT)
+- **Deep Learning Specialization** (5 courses) — DeepLearning.AI (2025) · [Verify ✓](https://www.coursera.org/account/accomplishments/specialization/DB0AYMUXFKUS)
+- **Generative AI Engineering and Fine-tuning Transformers** — IBM (2025) · [Verify ✓](https://www.coursera.org/account/accomplishments/records/2ZWOB6ASBOE9)
+- **Data Science Ethics** — University of Michigan (2025) · [Verify ✓](https://www.coursera.org/account/accomplishments/certificate/SHRREF51TX3O)
 
 ## Beyond work
 
