@@ -1,0 +1,317 @@
+{
+  "basics": {
+    "name": "Muhammad Fareed",
+    "label": "Machine Learning & Artificial Intelligence Researcher",
+    "image": "",
+    "email": "mfareedkhan012@gmail.com",
+    "phone": "+92 320 4496708",
+    "url": "https://mfareedkhan.github.io",
+    "summary": "Machine learning and AI researcher working on efficient, deployable AI — parameter-efficient fine-tuning (QLoRA/LoRA), quantization, and small/multimodal models that run on modest hardware. Healthcare and low-resource-language AI are the primary proving grounds; the methods generalize across domains.",
+    "location": {
+      "city": "Lahore",
+      "countryCode": "PK",
+      "region": "Punjab"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "mfareedkhan",
+        "url": "https://github.com/mfareedkhan"
+      },
+      {
+        "network": "LinkedIn",
+        "username": "mfareedkhan012",
+        "url": "https://linkedin.com/in/mfareedkhan012"
+      },
+      {
+        "network": "Google Scholar",
+        "username": "Muhammad Fareed",
+        "url": "https://scholar.google.com/citations?user=FVTRze8AAAAJ&hl=en"
+      }
+    ]
+  },
+  "education": [
+    {
+      "institution": "Riphah School of Computing & Innovation (RSCI), Riphah International University, Lahore",
+      "url": "",
+      "area": "Data Science",
+      "studyType": "MS",
+      "startDate": "2024",
+      "endDate": "2026",
+      "score": "CGPA 4.0/4.0 — batch topper (first position, Spring 2024 cohort); full scholarship throughout. Dean's Honor List (Certificate of Merit Achievement), Spring 2024. Thesis: Retrieval-Augmented, Parameter-Efficient Fine-Tuning of a Vision–Language Model for Chest X-ray Report Generation (supervisor: Dr. Jamal Uddin).",
+      "courses": [
+        "Machine Learning (A+)",
+        "Research Methods (A+)",
+        "Advanced Database Systems (A+)",
+        "Cloud Computing Infrastructure & Services (A+)",
+        "Professional Ethics-I (A+)",
+        "Deep Learning (A)",
+        "Statistical & Mathematical Methods for Data Science (A)",
+        "Tools & Techniques in Data Science (A)",
+        "Big Data Analytics (A)"
+      ]
+    },
+    {
+      "institution": "Virtual University of Pakistan, Lahore",
+      "url": "",
+      "area": "B.Ed. Secondary (1.5-Year) — Specialisation: ICT in Education",
+      "studyType": "B.Ed.",
+      "startDate": "2021",
+      "endDate": "2024",
+      "score": "First Division — CGPA 2.98/4.0 (70.97%)",
+      "courses": []
+    },
+    {
+      "institution": "University of Education, Township Campus, Lahore",
+      "url": "",
+      "area": "Mathematics",
+      "studyType": "BS (Hons)",
+      "startDate": "2012",
+      "endDate": "2016",
+      "score": "First Division — CGPA 2.64/4.0 (67.45%)",
+      "courses": []
+    },
+    {
+      "institution": "Punjab College of Science, Muslim Town Campus, Lahore",
+      "url": "",
+      "area": "Pre-Engineering (HSSC)",
+      "studyType": "F.Sc",
+      "startDate": "2010",
+      "endDate": "2012",
+      "score": "Grade A (809/1100, ≥73.5%) — 100% merit scholarship",
+      "courses": []
+    },
+    {
+      "institution": "Aziz Memorial Science High School, Lahore",
+      "url": "",
+      "area": "Science (SSC)",
+      "studyType": "Secondary School Certificate",
+      "startDate": "2008",
+      "endDate": "2010",
+      "score": "Grade A+ (954/1050, ≥90.9%) — first position at school level",
+      "courses": []
+    }
+  ],
+  "publications": [
+    {
+      "name": "A Systematic Review of Ethical Considerations of Large Language Models in Healthcare and Medicine",
+      "publisher": "Frontiers in Digital Health (IF 3.8, Q1) — Published, first author",
+      "releaseDate": "2025",
+      "url": "https://doi.org/10.3389/fdgth.2025.1653631",
+      "summary": "Fareed, M., Fatima, M., Uddin, J., Ahmed, A., & Sattar, M. A. A PRISMA 2020 systematic review of ethical risks in deploying LLMs in healthcare; 27 studies included; proposes a four-layer ethical integration framework."
+    },
+    {
+      "name": "CXRG-SVLM: A Parameter-Efficient Small Vision-Language Model for Multi-View Chest X-ray Report Generation in Resource-Constrained Environments",
+      "publisher": "Scientific Reports — under review (MS thesis work), first author",
+      "releaseDate": "2026",
+      "url": "",
+      "summary": "Fareed, M., Uddin, J., Ahmed, A., Sayyid, A. H., & Sattar, M. A. Small VLM generating chest X-ray reports on a single 16 GB GPU; 4-bit QLoRA (0.97% trainable); ROUGE-L 0.3116, METEOR 0.2530, clinical-entity F1 0.4867."
+    },
+    {
+      "name": "Optimizing Multilingual BERT for Punjabi Sentiment Analysis using PEFT Techniques",
+      "publisher": "Computers, Materials & Continua (CMC), Tech Science Press — under review, co-author",
+      "releaseDate": "2026",
+      "url": "",
+      "summary": "Ahmed, A., Riaz, S., & Fareed, M. (third author). First systematic PEFT benchmark for Punjabi sentiment analysis; LoRA 85% accuracy at 1.07% trainable parameters."
+    },
+    {
+      "name": "A Systematic Review of LSTM-Based Deep Learning Models in Healthcare and Medicine",
+      "publisher": "In preparation (target: Frontiers) — not yet submitted, first author",
+      "releaseDate": "2026",
+      "url": "",
+      "summary": "Fareed, M., Uddin, J., Ahmed, A., Nauman, M. A., Khan, N., Billah, M., & Sattar, M. A. PRISMA 2020 systematic review of LSTM applications across healthcare; 101 studies; identifies six advancement clusters."
+    }
+  ],
+  "work": [
+    {
+      "name": "Govt. Elementary School, Attari Saroba, Lahore",
+      "position": "Science & Mathematics Teacher (BPS-14)",
+      "url": "",
+      "startDate": "2018",
+      "endDate": "",
+      "summary": "Substantive permanent civil-service post (awarded by competitive examination), held concurrently with MS studies, thesis research, and four peer-reviewed papers (2024–2026).",
+      "highlights": []
+    },
+    {
+      "name": "Digiversity Training Institute, Lahore",
+      "position": "Digital Marketing & Web Development Trainer",
+      "url": "",
+      "startDate": "2022",
+      "endDate": "2023",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "name": "Converrsion Marketing Agency, Lahore",
+      "position": "Social Media Marketing Manager",
+      "url": "",
+      "startDate": "2021",
+      "endDate": "2022",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "name": "Leads Group of Colleges, Lahore",
+      "position": "Mathematics & Physics Instructor (intermediate & undergraduate)",
+      "url": "",
+      "startDate": "2015",
+      "endDate": "2017",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "name": "Independent",
+      "position": "Private O/A-Level Mathematics Tutor",
+      "url": "",
+      "startDate": "2014",
+      "endDate": "2015",
+      "summary": "",
+      "highlights": []
+    },
+    {
+      "name": "Yasin Public High School, Lahore",
+      "position": "Science & Mathematics Teacher (matriculation)",
+      "url": "",
+      "startDate": "2012",
+      "endDate": "2014",
+      "summary": "",
+      "highlights": []
+    }
+  ],
+  "awards": [
+    {
+      "title": "Inaugural cohort — AI-Driven Enterprise Product Development Programme",
+      "date": "2025",
+      "awarder": "Prime Minister's Youth Programme (PMYP) × Stanford Engineering CGOE",
+      "summary": "Competitive national selection; cohort developed and deployed AI-driven enterprise solutions under Stanford faculty guidance."
+    },
+    {
+      "title": "First position (batch topper), MS Data Science — Spring 2024 cohort",
+      "date": "2024",
+      "awarder": "RSCI, Riphah International University",
+      "summary": "CGPA 4.0/4.0; full scholarship throughout."
+    },
+    {
+      "title": "Dean's Honor List (Certificate of Merit Achievement), MS Data Science",
+      "date": "2024",
+      "awarder": "RSCI, Riphah International University",
+      "summary": "Spring 2024."
+    },
+    {
+      "title": "Best Teaching Performance Award",
+      "date": "2024",
+      "awarder": "Progressive Education Network (PEN) NGO, Lahore",
+      "summary": ""
+    },
+    {
+      "title": "100% merit scholarship — F.Sc Pre-Engineering",
+      "date": "2012",
+      "awarder": "Punjab College of Science, Lahore",
+      "summary": "2010–2012."
+    },
+    {
+      "title": "First position at school level — SSC (Science, Grade A+)",
+      "date": "2010",
+      "awarder": "Aziz Memorial Science High School, Lahore",
+      "summary": ""
+    },
+    {
+      "title": "Prime Minister's Laptop Scheme (academic merit)",
+      "date": "2012",
+      "awarder": "Government of Pakistan",
+      "summary": ""
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Innovation-Driven Product Development Using AI",
+      "date": "2026",
+      "issuer": "Stanford Engineering CGOE",
+      "url": "https://digitalcredential.stanford.edu/check/94FB98C8B9AE20FA6CE035EDF12D5CDC3C68320E523B2AC3B96DA2A73F1335B1cytjZUhXRHM4K0NMVDFudXZtaGRIQzJzd3J6SFllNDhVbkV5VE5uQzQva0h2eTRT"
+    },
+    {
+      "name": "Deep Learning Specialization (5 courses)",
+      "date": "2025",
+      "issuer": "DeepLearning.AI",
+      "url": "https://www.coursera.org/account/accomplishments/specialization/DB0AYMUXFKUS"
+    },
+    {
+      "name": "Generative AI Engineering and Fine-tuning Transformers",
+      "date": "2025",
+      "issuer": "IBM",
+      "url": "https://www.coursera.org/account/accomplishments/records/2ZWOB6ASBOE9"
+    },
+    {
+      "name": "Data Science Ethics",
+      "date": "2025",
+      "issuer": "University of Michigan",
+      "url": "https://www.coursera.org/account/accomplishments/certificate/SHRREF51TX3O"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Programming",
+      "level": "",
+      "keywords": ["Python (primary)", "LaTeX"]
+    },
+    {
+      "name": "Frameworks & Libraries",
+      "level": "",
+      "keywords": ["PyTorch", "TensorFlow", "Hugging Face Transformers & PEFT", "Keras"]
+    },
+    {
+      "name": "Efficient Adaptation & Deployment",
+      "level": "",
+      "keywords": ["QLoRA", "LoRA", "AdaLoRA", "4-bit Quantization", "Knowledge Distillation", "On-premise deployment", "Edge-optimised inference", "Privacy-preserving model design"]
+    },
+    {
+      "name": "Modelling & Research Methods",
+      "level": "",
+      "keywords": ["Vision–Language Models", "LLMs", "Multimodal Fusion", "Transfer Learning", "PEFT", "NLP", "Computer Vision", "Generative AI", "Systematic Literature Review (PRISMA 2020)"]
+    },
+    {
+      "name": "Infrastructure & Data",
+      "level": "",
+      "keywords": ["Cloud Computing", "DBMS", "SQL", "Google Colab", "CUDA/cuDNN"]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Professional working proficiency (C1)"
+    },
+    {
+      "language": "Urdu",
+      "fluency": "Native (C2)"
+    },
+    {
+      "language": "Punjabi",
+      "fluency": "Native (C2)"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Tameer Kadah Foundation (TKF), Lahore",
+      "position": "Vice President",
+      "url": "",
+      "startDate": "2018",
+      "endDate": "2020",
+      "summary": "Welfare and development initiatives for children with physical and cognitive disabilities; co-managed organisational programmes and community outreach.",
+      "highlights": []
+    }
+  ],
+  "references": [
+    {
+      "name": "Dr. Jamal Uddin",
+      "reference": "Assistant Professor; Head of Dept., AI & Data Science, RSCI, Riphah International University. MS thesis supervisor; taught Deep Learning and Statistical & Mathematical Methods. jamal.din@riphah.edu.pk"
+    },
+    {
+      "name": "Dr. Muhammad Yaseen",
+      "reference": "Associate Professor; Head of Dept., Software Engineering, RSCI, Riphah International University. Taught Advanced Database Systems and Cloud Computing Infrastructure & Services. muhammad.yaseen@riphah.edu.pk"
+    },
+    {
+      "name": "Dr. Muhammad Awais Sattar",
+      "reference": "Postdoctoral Researcher, Luleå University of Technology, Sweden. Taught Tools & Techniques in Data Science, Programming Fundamentals, and Research Methods; corresponding author on two papers. muhammad.awais.sattar@associated.ltu.se"
+    }
+  ]
+}
