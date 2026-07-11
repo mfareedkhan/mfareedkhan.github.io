@@ -122,8 +122,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: Muhammad Fareed
-blog_description: Notes on efficient, deployable AI for real-world constraints
+blog_name: AI Research Notes
+blog_description: Writing on ML/AI research, model efficiency, and real-world AI systems
 display_tags: ["qlora", "peft", "quantization", "healthcare-ai", "nlp"]
 display_categories: ["efficient-ai", "healthcare-ai", "nlp", "research-methods"]
 permalink: /blog/:year/:title/
