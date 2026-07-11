@@ -5,7 +5,7 @@ date: 2026-06-01 09:00:00
 description: A practical walkthrough of INT8, INT4, GPTQ, and AWQ quantization, and how to think about the trade-off between model size, latency, and accuracy when deploying to constrained hardware.
 tags: quantization int4 int8 edge-ai deployment
 categories: efficient-ai
-giscus_comments: true
+giscus_comments: false
 related_posts: true
 ---
 

@@ -5,7 +5,7 @@ date: 2026-06-15 09:00:00
 description: A single chest X-ray view leaves real ambiguity. Here's how fusing frontal and lateral projections — and retrieving relevant prior context — helps close that gap, and what it costs to implement well.
 tags: multimodal-fusion medical-imaging chest-xray
 categories: healthcare-ai
-giscus_comments: true
+giscus_comments: false
 related_posts: true
 ---
 

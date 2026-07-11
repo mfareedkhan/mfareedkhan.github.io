@@ -5,7 +5,7 @@ date: 2026-05-04 09:00:00
 description: How 4-bit NormalFloat quantization, double quantization, and paged optimizers let you fine-tune multi-billion-parameter models without a data-center GPU cluster.
 tags: qlora lora fine-tuning quantization
 categories: efficient-ai
-giscus_comments: true
+giscus_comments: false
 related_posts: true
 ---
 

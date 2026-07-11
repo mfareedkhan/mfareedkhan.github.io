@@ -5,7 +5,7 @@ date: 2026-06-29 09:00:00
 description: A practical walkthrough of the PRISMA 2020 methodology, illustrated with real numbers from two systematic reviews I've worked on — one covering LLM ethics in healthcare, the other LSTM applications in medicine.
 tags: systematic-review prisma research-methods healthcare-ai
 categories: research-methods
-giscus_comments: true
+giscus_comments: false
 related_posts: true
 ---
 

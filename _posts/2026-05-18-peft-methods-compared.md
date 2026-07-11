@@ -5,7 +5,7 @@ date: 2026-05-18 09:00:00
 description: LoRA gets most of the attention, but it's one option among several parameter-efficient fine-tuning methods, each with different trade-offs in accuracy, parameter budget, and implementation complexity.
 tags: peft lora adalora ia3 prompt-tuning
 categories: efficient-ai
-giscus_comments: true
+giscus_comments: false
 related_posts: true
 ---
 

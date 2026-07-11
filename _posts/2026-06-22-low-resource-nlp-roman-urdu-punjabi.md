@@ -5,7 +5,7 @@ date: 2026-06-22 09:00:00
 description: Urdu and Punjabi have hundreds of millions of speakers between them, yet NLP tooling for both lags far behind English. Here's what makes these languages genuinely hard for current models, and what actually helps.
 tags: low-resource-nlp urdu punjabi peft
 categories: nlp
-giscus_comments: true
+giscus_comments: false
 related_posts: true
 ---
 

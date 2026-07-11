@@ -5,7 +5,7 @@ date: 2026-06-08 09:00:00
 description: What it actually takes to build a vision-language model that can draft a chest X-ray report — and why hallucination, not raw accuracy, is the problem that determines whether it's safe to use.
 tags: vision-language-models radiology healthcare deployment
 categories: healthcare-ai
-giscus_comments: true
+giscus_comments: false
 related_posts: true
 ---
 

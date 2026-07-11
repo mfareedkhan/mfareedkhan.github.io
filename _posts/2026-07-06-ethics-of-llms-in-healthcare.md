@@ -5,7 +5,7 @@ date: 2026-07-06 09:00:00
 description: Bias, safety, transparency, accountability, and privacy are the five risks that show up again and again in the LLM-healthcare literature. Here's what they look like in practice, and what a workable governance framework needs to address.
 tags: llm-ethics healthcare ai-safety
 categories: healthcare-ai
-giscus_comments: true
+giscus_comments: false
 related_posts: true
 ---
 
