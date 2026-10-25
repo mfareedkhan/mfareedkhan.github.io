@@ -25,4 +25,5 @@ if grep -q "0.97%" "$site/research/index.html"; then
   echo "Deprecated parameter percentage remains in rendered research page" >&2
   exit 1
 fi
+python3 test/check_academic_links.py "$site"
 echo "Academic portfolio smoke checks passed"
