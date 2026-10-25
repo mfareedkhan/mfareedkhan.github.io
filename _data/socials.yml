@@ -5,7 +5,7 @@ cv_pdf: /assets/pdf/muhammad_fareed_cv.pdf # path to your CV PDF file
 email: mfareedkhan012@gmail.com # your email address
 github_username: mfareedkhan # your GitHub username
 linkedin_username: mfareedkhan012 # your LinkedIn username
-orcid_id: # your ORCID id (empty for now)
+orcid_id: 0009-0005-9509-2108
 rss_icon: true # comment this line to hide the RSS icon
 scholar_userid: FVTRze8AAAAJ # your Google Scholar ID
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
