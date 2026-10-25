@@ -139,3 +139,15 @@ html[data-theme="dark"] .mf-contact { background: #192b40; }
 html[data-theme="dark"] .mf-chip { color: #d9eaff; }
 html[data-theme="dark"] .mf-note,
 html[data-theme="dark"] .mf-filter a { background: #213a56; color: #d7e9fc; }
+
+/* Prevent narrow-screen CV controls and long technical terms from causing
+   horizontal scrolling; mobile Playwright detected an 8px CV overflow. */
+.mf-wrap { max-width: 100%; overflow-wrap: break-word; }
+.mf-wrap .mf-card, .mf-wrap .mf-columns > *, .mf-wrap .mf-timeline > li { min-width: 0; }
+.mf-wrap .mf-section-head { flex-wrap: wrap; }
+.mf-wrap .mf-section-head .mf-btn { max-width: 100%; white-space: normal; }
+@media (max-width: 520px) {
+  .mf-wrap .mf-section-head { gap: .6rem; }
+  .mf-wrap .mf-timeline > li { overflow-wrap: anywhere; }
+  .mf-wrap .mf-card { padding: .85rem; }
+}
