@@ -1,0 +1,634 @@
+/*
+ * Muhammad Fareed — academic portfolio refresh (October 2026).
+ * Scoped components atop al-folio; no theme framework replacement.
+ * Color / spacing direction: approved blue, white and navy mockup.
+ */
+:root {
+  --mf-navy: #102b4d;
+  --mf-blue: #1260bc;
+  --mf-text: #142c4b;
+  --mf-muted: #5e7087;
+  --mf-line: #dfe8f2;
+  --mf-card: #fff;
+  --mf-soft: #f0f5fb;
+  --mf-radius: 12px;
+}
+body {
+  font-family:
+    "Inter",
+    "Source Sans Pro",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+.navbar {
+  border-bottom: 1px solid var(--mf-line);
+  box-shadow: 0 1px 9px rgba(15, 39, 72, 0.025);
+}
+.navbar .navbar-brand {
+  font-weight: 760;
+  letter-spacing: -0.025em;
+}
+.navbar .navbar-nav .nav-link {
+  font-size: 0.89rem;
+  font-weight: 550;
+}
+.navbar .navbar-nav .nav-link.active {
+  color: var(--mf-blue) !important;
+}
+.mf-wrap {
+  color: var(--mf-text);
+  line-height: 1.62;
+}
+.mf-wrap a {
+  color: var(--mf-blue);
+}
+.mf-wrap h1,
+.mf-wrap h2,
+.mf-wrap h3,
+.mf-wrap h4 {
+  color: var(--mf-navy);
+  line-height: 1.28;
+  letter-spacing: -0.025em;
+}
+.mf-wrap h1 {
+  font-size: clamp(2rem, 3.5vw, 2.6rem);
+  font-weight: 790;
+  margin: 0 0 0.7rem;
+}
+.mf-wrap h2 {
+  font-size: 1.45rem;
+  font-weight: 750;
+  margin: 0;
+}
+.mf-wrap h3 {
+  font-size: 1.09rem;
+  font-weight: 740;
+  margin: 0 0 0.35rem;
+}
+.mf-wrap p {
+  margin: 0.45rem 0 0.85rem;
+}
+.mf-lead {
+  color: var(--mf-muted);
+  font-size: 1.04rem;
+  max-width: 770px;
+}
+.mf-kicker {
+  text-transform: uppercase;
+  font-size: 0.74rem;
+  letter-spacing: 0.095em;
+  font-weight: 780;
+  color: var(--mf-blue);
+  margin-bottom: 0.3rem;
+}
+.mf-section {
+  margin: 2.35rem 0;
+}
+.mf-section-head {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 0 0 1rem;
+}
+.mf-section-head a {
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+.mf-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.mf-card {
+  background: var(--mf-card);
+  border: 1px solid var(--mf-line);
+  border-radius: var(--mf-radius);
+  padding: 1.2rem;
+  box-shadow: 0 4px 16px rgba(18, 46, 82, 0.035);
+}
+.mf-card p:last-child {
+  margin-bottom: 0;
+}
+.mf-card:hover {
+  border-color: #b4d2f5;
+}
+.mf-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2.55rem;
+  height: 2.55rem;
+  border-radius: 9px;
+  background: #eaf3ff;
+  color: var(--mf-blue);
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+}
+.mf-chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 1.1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+.mf-chip {
+  display: inline-block;
+  background: var(--mf-soft);
+  color: #375477;
+  padding: 0.38rem 0.72rem;
+  border-radius: 7px;
+  font-size: 0.79rem;
+  font-weight: 550;
+  line-height: 1.4;
+}
+.mf-btn,
+.mf-wrap a.mf-btn {
+  display: inline-flex;
+  gap: 0.45rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #c6d8ec;
+  color: var(--mf-blue);
+  background: #fff;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.55rem 0.83rem;
+  text-decoration: none;
+}
+.mf-btn:hover,
+.mf-wrap a.mf-btn:hover {
+  color: #fff;
+  background: var(--mf-blue);
+  text-decoration: none;
+}
+.mf-btn-primary,
+.mf-wrap a.mf-btn-primary {
+  color: #fff;
+  background: var(--mf-blue);
+  border-color: var(--mf-blue);
+}
+.mf-btn-primary:hover,
+.mf-wrap a.mf-btn-primary:hover {
+  background: #0a4e9f;
+}
+.mf-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-top: 0.9rem;
+}
+.mf-social-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem 1.15rem;
+  margin: 1.05rem 0 0;
+}
+.mf-social-links a {
+  display: inline-flex;
+  gap: 0.4rem;
+  align-items: center;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 620;
+}
+.mf-social-links i {
+  color: var(--mf-blue);
+  width: 1.1em;
+  text-align: center;
+}
+.mf-hero-intro {
+  color: var(--mf-text);
+  max-width: 780px;
+  font-size: 1.03rem;
+}
+.mf-hero-intro strong {
+  color: var(--mf-navy);
+}
+.mf-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+}
+.mf-showcase .mf-card {
+  padding: 0;
+  overflow: hidden;
+}
+.mf-showcase-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.65rem;
+  min-height: 142px;
+  background: linear-gradient(135deg, #e9f1fb, #f7fbff);
+  border-bottom: 1px solid var(--mf-line);
+  padding: 1rem;
+  color: var(--mf-blue);
+}
+.mf-visual-block {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--mf-blue);
+  border: 1px solid #c4d8ef;
+  padding: 0.6rem 0.68rem;
+  border-radius: 9px;
+  background: #fff;
+  text-align: center;
+  min-width: 80px;
+}
+.mf-visual-block i {
+  font-size: 1.2rem;
+}
+.mf-visual-block span {
+  font-size: 0.67rem;
+  font-weight: 650;
+}
+.mf-showcase-content {
+  padding: 1rem 1.15rem 1.15rem;
+}
+.mf-showcase-content h3 {
+  margin: 0.15rem 0;
+}
+.mf-showcase-content p {
+  font-size: 0.88rem;
+  color: var(--mf-muted);
+}
+.mf-pill {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0.23rem 0.52rem;
+  font-size: 0.73rem;
+  font-weight: 750;
+  white-space: nowrap;
+}
+.mf-pill-accepted,
+.mf-pill-published {
+  color: #237044;
+  background: #e6f6eb;
+}
+.mf-pill-submitted {
+  color: #815418;
+  background: #fff1d9;
+}
+.mf-pill-prep {
+  color: #486681;
+  background: #edf2f8;
+}
+.mf-vision {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  border: 1px solid #dae7f6;
+  background: linear-gradient(110deg, #eaf3fd, #f5f9fd);
+  padding: 1.2rem 1.25rem;
+  border-radius: var(--mf-radius);
+}
+.mf-vision > i {
+  font-size: 1.5rem;
+  color: var(--mf-blue);
+  margin-top: 0.25rem;
+}
+.mf-vision p {
+  margin: 0.2rem 0 0;
+}
+.mf-interest-card {
+  padding: 1rem;
+}
+.mf-interest-card p {
+  font-size: 0.81rem;
+  color: var(--mf-muted);
+}
+.mf-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+.mf-mini {
+  border: 1px solid var(--mf-line);
+  border-radius: 9px;
+  padding: 0.9rem 0.5rem;
+  text-align: center;
+  font-size: 0.78rem;
+  color: var(--mf-text);
+}
+.mf-mini i {
+  display: block;
+  font-size: 1.25rem;
+  color: var(--mf-blue);
+  margin-bottom: 0.55rem;
+}
+.mf-publication {
+  display: grid;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 1.05rem;
+  padding: 1.3rem 0;
+  border-bottom: 1px solid var(--mf-line);
+}
+.mf-publication:last-child {
+  border-bottom: 0;
+}
+.mf-publication-icon {
+  display: grid;
+  place-items: center;
+  min-height: 105px;
+  border-radius: 9px;
+  background: linear-gradient(150deg, #e7f0fa, #f6faff);
+  color: var(--mf-blue);
+  font-size: 2.4rem;
+}
+.mf-publication h3 {
+  font-size: 1.1rem;
+  line-height: 1.42;
+  margin: 0.05rem 0 0.3rem;
+}
+.mf-publication p {
+  font-size: 0.87rem;
+  color: var(--mf-muted);
+  margin: 0.3rem 0;
+}
+.mf-meta {
+  color: var(--mf-blue) !important;
+  font-weight: 600;
+}
+.mf-publication-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.35rem 0.75rem;
+}
+.mf-filter {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin: 1.3rem 0;
+}
+.mf-filter a {
+  color: #496683;
+  background: #f5f8fc;
+  border: 1px solid var(--mf-line);
+  border-radius: 7px;
+  padding: 0.42rem 0.68rem;
+  text-decoration: none;
+  font-size: 0.78rem;
+}
+.mf-filter a:hover {
+  background: #eaf3fc;
+}
+.mf-project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.mf-project .mf-project-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 105px;
+  border-radius: 9px;
+  margin: -0.18rem -0.18rem 0.95rem;
+  background: #eef5fd;
+  color: #1764b5;
+  font-size: 2.1rem;
+}
+.mf-project p {
+  color: var(--mf-muted);
+  font-size: 0.84rem;
+}
+.mf-project .mf-actions {
+  margin-top: 0.7rem;
+}
+.mf-project .mf-actions a {
+  font-size: 0.83rem;
+  font-weight: 730;
+}
+.mf-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(255px, 0.85fr);
+  gap: 1.5rem;
+}
+.mf-timeline {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border-left: 2px solid #bed5ee;
+}
+.mf-timeline > li {
+  position: relative;
+  margin: 0 0 1rem 1.2rem;
+}
+.mf-timeline > li:before {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--mf-blue);
+  top: 1.1rem;
+  left: calc(-1.2rem - 6px);
+}
+.mf-timeline .mf-card {
+  padding: 0.95rem 1.05rem;
+}
+.mf-period {
+  font-size: 0.78rem;
+  color: var(--mf-muted);
+  font-weight: 630;
+}
+.mf-timeline p {
+  font-size: 0.83rem;
+  color: var(--mf-muted);
+}
+.mf-skill-group {
+  margin: 0 0 1rem;
+}
+.mf-skill-group h3 {
+  font-size: 0.91rem;
+}
+.mf-skill-group p {
+  color: var(--mf-muted);
+  font-size: 0.84rem;
+}
+.mf-contact-list {
+  display: grid;
+  gap: 0.7rem;
+}
+.mf-contact {
+  display: flex;
+  gap: 0.9rem;
+  align-items: center;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--mf-line);
+  border-radius: 10px;
+  text-decoration: none !important;
+  color: var(--mf-text) !important;
+  background: var(--mf-card);
+}
+.mf-contact i {
+  font-size: 1.15rem;
+  color: var(--mf-blue);
+  width: 1.4rem;
+  text-align: center;
+}
+.mf-contact strong {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--mf-navy);
+}
+.mf-contact span {
+  display: block;
+  font-size: 0.82rem;
+  color: var(--mf-muted);
+  overflow-wrap: anywhere;
+}
+.mf-contact:hover {
+  border-color: #adcaeb;
+}
+.mf-note {
+  border-radius: 9px;
+  background: #eef5fc;
+  padding: 1rem;
+  margin: 1.2rem 0;
+  color: #416382;
+  font-size: 0.86rem;
+}
+.mf-small-note {
+  font-size: 0.82rem;
+  color: var(--mf-muted);
+}
+.mf-wrap a:focus-visible {
+  outline: 3px solid #76aefd;
+  outline-offset: 2px;
+}
+@media (max-width: 760px) {
+  .mf-grid,
+  .mf-project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .mf-columns,
+  .mf-showcase {
+    grid-template-columns: 1fr;
+  }
+  .mf-section {
+    margin: 1.9rem 0;
+  }
+}
+@media (max-width: 520px) {
+  .mf-grid,
+  .mf-project-grid,
+  .mf-mini-grid {
+    grid-template-columns: 1fr;
+  }
+  .mf-publication {
+    grid-template-columns: 68px minmax(0, 1fr);
+    gap: 0.75rem;
+  }
+  .mf-publication-icon {
+    font-size: 1.55rem;
+    min-height: 72px;
+  }
+  .mf-vision {
+    padding: 0.9rem;
+    gap: 0.6rem;
+  }
+  .mf-wrap h1 {
+    font-size: 1.75rem;
+  }
+  .mf-section-head {
+    align-items: flex-start;
+  }
+}
+/* Native al-folio dark mode remains legible with the academic components. */
+html[data-theme="dark"],
+body[data-theme="dark"] {
+  --mf-navy: #e6f1ff;
+  --mf-blue: #8abfff;
+  --mf-text: #dce9fb;
+  --mf-muted: #afc4dc;
+  --mf-line: #39516c;
+  --mf-card: #192b40;
+  --mf-soft: #263b53;
+}
+html[data-theme="dark"] .mf-showcase-visual,
+html[data-theme="dark"] .mf-publication-icon,
+html[data-theme="dark"] .mf-project .mf-project-visual,
+html[data-theme="dark"] .mf-vision {
+  background: #213a56;
+}
+html[data-theme="dark"] .mf-visual-block,
+html[data-theme="dark"] .mf-btn,
+html[data-theme="dark"] .mf-contact {
+  background: #192b40;
+}
+html[data-theme="dark"] .mf-chip {
+  color: #d9eaff;
+}
+html[data-theme="dark"] .mf-note,
+html[data-theme="dark"] .mf-filter a {
+  background: #213a56;
+  color: #d7e9fc;
+}
+
+/* Prevent narrow-screen CV controls and long technical terms from causing
+   horizontal scrolling; mobile Playwright detected an 8px CV overflow. */
+.mf-wrap {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+.mf-wrap .mf-card,
+.mf-wrap .mf-columns > *,
+.mf-wrap .mf-timeline > li {
+  min-width: 0;
+}
+.mf-wrap .mf-section-head {
+  flex-wrap: wrap;
+}
+.mf-wrap .mf-section-head .mf-btn {
+  max-width: 100%;
+  white-space: normal;
+}
+@media (max-width: 520px) {
+  .mf-wrap .mf-section-head {
+    gap: 0.6rem;
+  }
+  .mf-wrap .mf-timeline > li {
+    overflow-wrap: anywhere;
+  }
+  .mf-wrap .mf-card {
+    padding: 0.85rem;
+  }
+}
+
+/* Academic page layouts supply their own accessible heading. The al-folio
+   page-layout wrapper title duplicates these headings otherwise. */
+.post:has(.mf-wrap) .post-header {
+  display: none;
+}
+/* Match the approved blue accent even in the theme's generated navigation. */
+html[data-theme="light"],
+html:not([data-theme]) {
+  --global-theme-color: #1260bc;
+  --global-hover-color: #0a4e9f;
+}
+html[data-theme="dark"] {
+  --global-theme-color: #8abfff;
+  --global-hover-color: #b5d8ff;
+}
+.mf-wrap .profile .more-info,
+.profile .more-info {
+  font-family: inherit;
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+.profile .more-info p {
+  margin-bottom: 0.25rem;
+}
