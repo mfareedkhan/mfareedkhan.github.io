@@ -120,6 +120,15 @@ jobs:
 
           # Academic content and layouts are intentionally redesigned, so old-style\n          # pixel parity is not a meaningful acceptance criterion here. Instead\n          # run targeted page functionality and responsive layout checks.\n          npx playwright test --config test/visual/playwright.config.js test/visual/academic.spec.js --reporter=line
 
+      - name: Upload academic page screenshots 🖼️
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: academic-website-desktop-mobile-previews
+          path: preview-screenshots/*.png
+          if-no-files-found: warn
+          retention-days: 14
+
       - name: Upload Playwright report 📄
         if: always()
         uses: actions/upload-artifact@v4
