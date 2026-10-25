@@ -8,7 +8,7 @@ description: Curriculum vitae — Muhammad Fareed, AI/ML researcher and engineer
 ---
 <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
 <div class="mf-wrap">
-  <div class="mf-section-head"><h1>Curriculum Vitae</h1><a class="mf-btn" href="mailto:mfareedkhan012@gmail.com?subject=Academic%20CV%20request"><i class="fa-solid fa-envelope" aria-hidden="true"></i> Request PDF CV</a></div>
+  <div class="mf-section-head"><h1>Curriculum Vitae</h1><a class="mf-btn" href="{{ '/assets/pdf/muhammad_fareed_cv.pdf' | relative_url }}" download><i class="fa-solid fa-envelope" aria-hidden="true"></i> Download CV (PDF)</a></div>
   <p class="mf-lead">Education, professional and research experience, technical skills, and selected distinctions. This online record is aligned with my October 2026 academic profile.</p>
   <div class="mf-columns mf-section"><div>
     <section class="mf-section"><h2><i class="fa-solid fa-building-columns" aria-hidden="true"></i> Education</h2>
