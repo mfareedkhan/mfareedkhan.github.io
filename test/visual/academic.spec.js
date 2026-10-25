@@ -1,4 +1,6 @@
 const { test, expect } = require("@playwright/test");
+const fs = require("node:fs");
+const path = require("node:path");
 const { preparePage, stabilizeVisuals } = require("./helpers");
 
 const routes = [
@@ -24,6 +26,12 @@ for (const route of routes) {
       expect(errors).toEqual([]);
       const horizontalOverflow = await page.evaluate(() => document.documentElement.scrollWidth - window.innerWidth);
       expect(horizontalOverflow).toBeLessThanOrEqual(2);
+      if (theme === "light") {
+        const output = path.join(process.cwd(), "preview-screenshots");
+        fs.mkdirSync(output, { recursive: true });
+        const slug = route.path === "/" ? "home" : route.path.replaceAll("/", "");
+        await page.screenshot({ path: path.join(output, `${test.info().project.name}-${slug}.png`), fullPage: true, animations: "disabled" });
+      }
     });
   }
 }
