@@ -660,5 +660,5 @@ body:has(.mf-kicker) .post:has(.mf-wrap) .post-header {
 body:has(.mf-kicker) .post-header .post-title {
   font-weight: 780;
   color: var(--mf-navy);
-  letter-spacing: -.025em;
+  letter-spacing: -0.025em;
 }
