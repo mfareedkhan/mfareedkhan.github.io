@@ -39,10 +39,7 @@ jobs:
             _pages/cv.md _pages/contact.md \
             _news/2026-04-22-cxrg-submitted.md \
             assets/css/academic.css assets/json/resume.json \
-            test/visual/academic.spec.js \
-            .github/workflows/visual-regression.yml \
-            .github/workflows/unit-tests.yml \
-            .github/workflows/prettier.yml
+            test/visual/academic.spec.js
       - name: Commit formatting to development branch only
         run: |
           git config user.name "github-actions[bot]"
@@ -52,10 +49,7 @@ jobs:
             _pages/cv.md _pages/contact.md \
             _news/2026-04-22-cxrg-submitted.md \
             assets/css/academic.css assets/json/resume.json \
-            test/visual/academic.spec.js \
-            .github/workflows/visual-regression.yml \
-            .github/workflows/unit-tests.yml \
-            .github/workflows/prettier.yml
+            test/visual/academic.spec.js
           if ! git diff --cached --quiet; then
             git commit -m "Apply Prettier to redesigned academic site files"
             git push origin HEAD:website-redesign-2026
