@@ -151,3 +151,22 @@ html[data-theme="dark"] .mf-filter a { background: #213a56; color: #d7e9fc; }
   .mf-wrap .mf-timeline > li { overflow-wrap: anywhere; }
   .mf-wrap .mf-card { padding: .85rem; }
 }
+
+/* Academic page layouts supply their own accessible heading. The al-folio
+   page-layout wrapper title duplicates these headings otherwise. */
+.post:has(.mf-wrap) .post-header { display: none; }
+/* Match the approved blue accent even in the theme's generated navigation. */
+html[data-theme="light"], html:not([data-theme]) {
+  --global-theme-color: #1260bc;
+  --global-hover-color: #0a4e9f;
+}
+html[data-theme="dark"] {
+  --global-theme-color: #8abfff;
+  --global-hover-color: #b5d8ff;
+}
+.mf-wrap .profile .more-info, .profile .more-info {
+  font-family: inherit;
+  font-size: .86rem;
+  line-height: 1.55;
+}
+.profile .more-info p { margin-bottom: .25rem; }
