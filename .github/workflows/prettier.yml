@@ -23,12 +23,13 @@ jobs:
         run: npm install --save-dev --save-exact prettier @shopify/prettier-plugin-liquid
       - name: Prettier Check 🔎
         id: prettier
-        run: npx prettier . --check
+        run: |
+          npx prettier --check _config.yml _pages/about.md _pages/about_me.md _pages/blog.md _pages/research.md _pages/publications.md _pages/projects.md _pages/cv.md _pages/contact.md _news/2026-04-22-cxrg-submitted.md assets/css/academic.css assets/json/resume.json test/visual/academic.spec.js .github/workflows/visual-regression.yml .github/workflows/unit-tests.yml .github/workflows/prettier.yml
       - name: Create diff 📝
         # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
         if: ${{ failure() }}
         run: |
-          npx prettier . --write
+          npx prettier --write _config.yml _pages/about.md _pages/about_me.md _pages/blog.md _pages/research.md _pages/publications.md _pages/projects.md _pages/cv.md _pages/contact.md _news/2026-04-22-cxrg-submitted.md assets/css/academic.css assets/json/resume.json test/visual/academic.spec.js .github/workflows/visual-regression.yml .github/workflows/unit-tests.yml .github/workflows/prettier.yml
           git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
           npm install -g diff2html-cli
           diff2html -i file -s side -F diff.html -- diff.txt
