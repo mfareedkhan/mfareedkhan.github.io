@@ -32,3 +32,11 @@
 "planck":
   - firstname: ["Max"]
     url: https://en.wikipedia.org/wiki/Max_Planck
+
+"uddin":
+  - firstname: ["Jamal", "J."]
+    url: https://scholar.google.com/citations?user=334NBuAAAAAJ&hl=en
+
+"sattar":
+  - firstname: ["Muhammad Awais", "M. A."]
+    url: https://scholar.google.com/citations?user=09S73QcAAAAJ&hl=en
