@@ -650,15 +650,3 @@ html[data-theme="dark"] {
 .profile .more-info p {
   margin-bottom: 0.25rem;
 }
-
-/* The homepage must retain its actual name and researcher subtitle. The
-   title wrapper is suppressed only on content pages to avoid duplicate H1s. */
-body:has(.mf-kicker) .post:has(.mf-wrap) .post-header {
-  display: block;
-  margin-bottom: 1rem;
-}
-body:has(.mf-kicker) .post-header .post-title {
-  font-weight: 780;
-  color: var(--mf-navy);
-  letter-spacing: -0.025em;
-}
