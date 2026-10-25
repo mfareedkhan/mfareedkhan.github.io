@@ -52,3 +52,24 @@ test("homepage uses academic highlights, not outdated metrics", async ({ page })
   await expect(page.getByText(/0.97%/)).toHaveCount(0);
   await expect(page.locator(".mf-showcase .mf-card")).toHaveCount(2);
 });
+
+test("home presents researcher name and profile image", async ({ page }) => {
+  await page.goto("/al-folio/");
+  await expect(page.getByRole("heading", { level: 1, name: "Muhammad Fareed" })).toBeVisible();
+  const portrait = page.locator('img[src*="prof_pic"]').first();
+  await expect(portrait).toBeVisible();
+  expect(await portrait.evaluate((img) => img.complete && img.naturalWidth > 0)).toBeTruthy();
+});
+
+test("CV PDF link points to the uploaded downloadable file", async ({ page, request }) => {
+  await page.goto("/al-folio/cv/");
+  const cvLink = page.getByRole("link", { name: /Download CV \(PDF\)/ });
+  await expect(cvLink).toBeVisible();
+  const href = await cvLink.getAttribute("href");
+  expect(href).toContain("/assets/pdf/muhammad_fareed_cv.pdf");
+  const response = await request.get(href);
+  expect(response.status()).toBe(200);
+  expect(response.headers()["content-type"]).toMatch(/pdf|octet-stream/);
+  const buf = await response.body();
+  expect(buf.subarray(0, 4).toString()).toBe("%PDF");
+});
