@@ -25,7 +25,9 @@ latest_posts:
 <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
 
 <div class="mf-wrap">
-  <p class="mf-kicker">Hello, I'm Muhammad Fareed</p>
+  <p class="mf-kicker">Hello, I\'m</p>
+  <h1>Muhammad Fareed</h1>
+  <p class="mf-lead"><strong>AI/ML Researcher &amp; Engineer</strong> · Multimodal Healthcare AI · Efficient &amp; Trustworthy Deep Learning</p>
   <p class="mf-hero-intro">I am an <strong>AI/ML researcher and engineer</strong> interested in developing <strong>efficient, trustworthy, and multimodal AI systems</strong>, particularly for healthcare and data-constrained environments. I completed my <strong>MS in Data Science</strong> at Riphah International University in April 2026 with a <strong>4.0/4.0 CGPA and first position</strong> in my cohort.</p>
   <p class="mf-hero-intro">My research spans medical vision-language models, chest X-ray report generation, clinical NLP, parameter-efficient adaptation, responsible healthcare AI, and low-resource multilingual NLP.</p>
   <div class="mf-social-links">
