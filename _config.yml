@@ -9,10 +9,10 @@ last_name: Fareed
 contact_note: >
   For research discussions and collaborations, please contact me by email.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Academic website of Muhammad Fareed, AI/ML researcher working on medical vision-language models, multimodal healthcare AI, efficient foundation models, trustworthy AI, and low-resource NLP.
+  Academic website of Muhammad Fareed, an AI/ML researcher and engineer specializing in efficient and trustworthy multimodal healthcare AI, medical vision-language models, clinical report generation, parameter-efficient foundation-model adaptation, responsible AI, and low-resource multilingual NLP.
 footer_text: >
   Research portfolio built with Jekyll and al-folio. Hosted on GitHub Pages.
-keywords: Muhammad Fareed, healthcare AI, medical VLM, multimodal learning, clinical NLP, QLoRA, efficient AI, trustworthy AI, research # add your own keywords or leave empty
+keywords: Muhammad Fareed, multimodal healthcare AI, medical vision-language models, medical imaging, clinical NLP, medical foundation models, efficient AI, PEFT, QLoRA, trustworthy AI, responsible healthcare AI, clinical report generation, multilingual NLP
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 

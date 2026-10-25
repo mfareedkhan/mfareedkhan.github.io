@@ -47,7 +47,7 @@ test("publication statuses and links are accurate", async ({ page }) => {
 
 test("homepage uses academic highlights, not outdated metrics", async ({ page }) => {
   await page.goto("/al-folio/");
-  await expect(page.getByText("CXRG-SVLM", { exact: true })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "CXRG-SVLM", exact: true })).toBeVisible();
   await expect(page.getByText(/1.91%/).first()).toBeVisible();
   await expect(page.getByText(/0.97%/)).toHaveCount(0);
   await expect(page.locator(".mf-showcase .mf-card")).toHaveCount(2);
