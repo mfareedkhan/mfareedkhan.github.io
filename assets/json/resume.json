@@ -241,67 +241,27 @@
     {
       "name": "Programming and ML frameworks",
       "level": "",
-      "keywords": [
-        "Python",
-        "PyTorch",
-        "TensorFlow",
-        "Keras",
-        "Hugging Face Transformers",
-        "Hugging Face PEFT",
-        "Unsloth"
-      ]
+      "keywords": ["Python", "PyTorch", "TensorFlow", "Keras", "Hugging Face Transformers", "Hugging Face PEFT", "Unsloth"]
     },
     {
       "name": "Multimodal and foundation models",
       "level": "",
-      "keywords": [
-        "LLMs",
-        "VLMs",
-        "Transformers",
-        "Medical visual encoders",
-        "Visual-text alignment",
-        "Clinical report generation"
-      ]
+      "keywords": ["LLMs", "VLMs", "Transformers", "Medical visual encoders", "Visual-text alignment", "Clinical report generation"]
     },
     {
       "name": "Efficient model adaptation",
       "level": "",
-      "keywords": [
-        "LoRA",
-        "QLoRA",
-        "PEFT",
-        "4-bit quantization",
-        "Transfer learning",
-        "Instruction fine-tuning"
-      ]
+      "keywords": ["LoRA", "QLoRA", "PEFT", "4-bit quantization", "Transfer learning", "Instruction fine-tuning"]
     },
     {
       "name": "Research and evaluation",
       "level": "",
-      "keywords": [
-        "ROUGE",
-        "METEOR",
-        "BERTScore",
-        "RaTEScore",
-        "RadGraph-F1",
-        "Clinical entity analysis",
-        "Failure analysis",
-        "PRISMA"
-      ]
+      "keywords": ["ROUGE", "METEOR", "BERTScore", "RaTEScore", "RadGraph-F1", "Clinical entity analysis", "Failure analysis", "PRISMA"]
     },
     {
       "name": "Data and engineering tools",
       "level": "",
-      "keywords": [
-        "Git/GitHub",
-        "SQL",
-        "NoSQL",
-        "LaTeX",
-        "Tableau",
-        "Power BI",
-        "Gradio",
-        "LLM/API integration"
-      ]
+      "keywords": ["Git/GitHub", "SQL", "NoSQL", "LaTeX", "Tableau", "Power BI", "Gradio", "LLM/API integration"]
     }
   ],
   "languages": [

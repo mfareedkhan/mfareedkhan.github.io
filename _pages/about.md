@@ -21,6 +21,7 @@ announcements:
 latest_posts:
   enabled: false
 ---
+
 <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
 
 <div class="mf-wrap">

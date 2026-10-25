@@ -6,6 +6,7 @@ nav: true
 nav_order: 3
 description: Research publications, accepted papers, submitted manuscripts and works in preparation, with accurate status labels.
 ---
+
 <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
 
 <div class="mf-wrap">

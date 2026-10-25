@@ -6,6 +6,7 @@ nav: true
 nav_order: 6
 description: Contact Muhammad Fareed for academic research discussions, PhD opportunities and collaborations.
 ---
+
 <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
 
 <div class="mf-wrap">

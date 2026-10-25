@@ -6,6 +6,7 @@ nav: true
 nav_order: 4
 description: Selected research and AI/ML projects in medical VLMs, low-resource NLP and efficient language-model adaptation.
 ---
+
 <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
 
 <div class="mf-wrap">

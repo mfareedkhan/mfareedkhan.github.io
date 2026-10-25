@@ -6,6 +6,7 @@ nav: true
 nav_order: 2
 description: Research in multimodal healthcare AI, medical VLMs, efficient adaptation, trustworthy AI and low-resource NLP.
 ---
+
 <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
 
 <div class="mf-wrap">

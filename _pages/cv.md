@@ -6,6 +6,7 @@ nav: true
 nav_order: 5
 description: Curriculum vitae — Muhammad Fareed, AI/ML researcher and engineer.
 ---
+
 <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
 <div class="mf-wrap">
   <div class="mf-section-head"><h1>Curriculum Vitae</h1><a class="mf-btn" href="{{ '/assets/pdf/muhammad_fareed_cv.pdf' | relative_url }}" download><i class="fa-solid fa-envelope" aria-hidden="true"></i> Download CV (PDF)</a></div>
