@@ -4,37 +4,42 @@ title: research
 permalink: /research/
 nav: true
 nav_order: 2
-description: Efficient, deployable AI for resource-constrained settings — method identity and application domain.
+description: Research in multimodal healthcare AI, medical VLMs, efficient adaptation, trustworthy AI and low-resource NLP.
 ---
 
-## Research statement
+<link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
 
-My research identity is **making advanced AI deployable where it is normally out of reach**: efficient, on-premise, privacy-preserving models that fit onto modest hardware while respecting real-world data constraints.
-
-I develop and adapt **small vision–language models and language models** using **parameter-efficient fine-tuning** (QLoRA/LoRA), **quantization**, **multimodal fusion**, and **transfer learning**. The goal throughout is the same: clinically or practically useful systems that do not require high-end infrastructure, so that the people and institutions who most need them can actually run them.
-
-I frame this work at two levels. At the **method level** — broad and domain-agnostic — the contribution is efficient, deployable AI under real-world constraints: PEFT, quantization, small/edge models, multimodal fusion, and trustworthy, ethically governed systems, supported by rigorous systematic evidence synthesis. At the **application level**, healthcare and low-resource-language AI are my primary proving ground: on-premise, privacy-preserving clinical decision support and NLP for languages with no large labelled corpora. Healthcare is where I demonstrate the methods; it is not their ceiling.
-
-I also care about the *governance* side of deployable AI. My published systematic review maps the ethical risks of large language models in medicine and proposes a framework for integrating regulatory, technical, human-oversight, and transparency safeguards — because a model is only truly deployable if it is also safe and accountable.
-
-## Research areas
-
-Multimodal AI for medicine &middot; Vision–Language Models (VLMs) &middot; Large Language Models (LLMs) &middot; Parameter-Efficient Fine-Tuning (QLoRA / LoRA) &middot; Quantization &middot; Transfer Learning &middot; NLP &middot; Computer Vision &middot; Generative AI &middot; Efficient / privacy-preserving deployable AI &middot; Systematic evidence synthesis (PRISMA 2020, Kitchenham & Charters).
-
-## Thesis — CXRG-SVLM
-
-**Retrieval-Augmented, Parameter-Efficient Fine-Tuning of a Vision–Language Model for Chest X-ray Report Generation.** Supervisor: Dr. Jamal Uddin.
-
-In plain terms: a small vision–language model that reads chest X-rays and drafts the radiology report, designed to run **on a single consumer GPU inside a hospital** — no cloud, no patient data leaving the building.
-
-The system pairs a frozen RAD-DINO image encoder with a 4-bit quantized Qwen2.5-3B-Instruct language model, adapted with **4-bit QLoRA that trains just 0.97% of parameters** (38.1M of 3.9B). A multi-view fusion module combines frontal and lateral radiographs and queries them through a continuous latent retrieval mechanism, which reduces hallucination compared with retrieving discrete historical text.
-
-**Headline results (Indiana University Chest X-ray dataset):** the system reaches ROUGE-L **0.3116** and METEOR **0.2530**, surpassing established baselines such as **R2Gen** — while training only **0.97% of parameters**, running at **7.8 seconds per report on a single 16 GB GPU.** Those last two numbers are the point: state-of-the-art-adjacent quality on hardware a hospital can actually afford.
-
-**Honest limitations** (stated because they matter): the evaluation uses a single-center dataset; detection of subtle or underrepresented findings such as cardiomegaly and pulmonary edema is weaker; and the multi-view setup relies on paired frontal/lateral views.
-
-This work is under review at *Scientific Reports*. Full publication details are on the [Publications](/publications/) page.
-
-## Where I want to take this
-
-In a PhD, I want to push efficient multimodal medical AI from single-center demonstrations toward robust, multi-site, deployable systems — improving reliability on rare findings, extending privacy-preserving on-premise training, and keeping trustworthy-AI governance built in rather than bolted on. The methods that make this work in healthcare are the same ones that make AI usable in any resource-constrained setting.
+<div class="mf-wrap">
+  <h1>Research</h1>
+  <p class="mf-lead">I am interested in developing efficient, trustworthy, and multimodal AI systems, particularly for healthcare and other settings where data, computing resources, and rigorous evaluation matter.</p>
+  <div class="mf-vision"><i class="fa-regular fa-lightbulb" aria-hidden="true"></i><div><h3>Research Vision</h3><p>To advance AI systems that are computationally practical, data-efficient, robust, transparent about their limitations, and evaluated for meaningful real-world use.</p></div></div>
+  <section class="mf-section"><div class="mf-section-head"><h2>Research Areas</h2></div>
+    <div class="mf-grid">
+      <article class="mf-card mf-interest-card"><span class="mf-icon"><i class="fa-solid fa-brain"></i></span><h3>Multimodal AI for Healthcare</h3><p>Medical VLMs, image-text fusion, and clinical report generation.</p></article>
+      <article class="mf-card mf-interest-card"><span class="mf-icon"><i class="fa-solid fa-x-ray"></i></span><h3>Medical Image Analysis</h3><p>Multi-view chest radiographs and explainable retinal-image modeling.</p></article>
+      <article class="mf-card mf-interest-card"><span class="mf-icon"><i class="fa-regular fa-comments"></i></span><h3>Large Language Models</h3><p>Clinical NLP, healthcare LLMs, and efficient model adaptation.</p></article>
+      <article class="mf-card mf-interest-card"><span class="mf-icon"><i class="fa-solid fa-gears"></i></span><h3>Efficient Deep Learning</h3><p>PEFT, LoRA/QLoRA, quantization, and resource-constrained experiments.</p></article>
+      <article class="mf-card mf-interest-card"><span class="mf-icon"><i class="fa-solid fa-shield-halved"></i></span><h3>Trustworthy AI</h3><p>Ethical governance, responsible model evaluation, and failure analysis.</p></article>
+      <article class="mf-card mf-interest-card"><span class="mf-icon"><i class="fa-solid fa-language"></i></span><h3>Low-Resource Multilingual NLP</h3><p>Roman Urdu, Punjabi, and multilingual language-model adaptation.</p></article>
+    </div>
+  </section>
+  <section class="mf-section" id="cxrg-svlm"><h2>Flagship Research — CXRG-SVLM</h2>
+    <p><strong>CXRG-SVLM: A Parameter-Efficient Small Vision-Language Model for Multi-View Chest X-ray Report Generation in Resource-Constrained Environments.</strong> MS research supervised by Dr. Jamal Uddin; accepted for publication in <em>Scientific Reports</em> (2026).</p>
+    <div class="mf-grid">
+      <div class="mf-card"><span class="mf-icon"><i class="fa-solid fa-layer-group"></i></span><h3>Model Architecture</h3><p>Frozen RAD-DINO visual encoder, attention-based frontal/lateral fusion, <strong>32 visual tokens</strong>, clinical-indication conditioning, and a 4-bit Qwen2.5-3B backbone adapted with QLoRA. Visual and indication embeddings form a joint prefix for causal self-attention.</p></div>
+      <div class="mf-card"><span class="mf-icon"><i class="fa-solid fa-chart-line"></i></span><h3>Efficiency</h3><p><strong>1,992,450,144</strong> framework-reported parameters; <strong>38,114,144 trainable (1.91%)</strong>. Eight-epoch training required approximately 3.19 hours on a single NVIDIA Tesla T4 (16 GB).</p></div>
+      <div class="mf-card"><span class="mf-icon"><i class="fa-solid fa-stethoscope"></i></span><h3>Evaluation &amp; Limitations</h3><p>IU-Xray held-out evaluation: ROUGE-L <strong>0.3527</strong>, BERTScore-F1 <strong>0.4361</strong>, RaTEScore <strong>0.6001</strong>, RadGraph-F1 <strong>0.3472</strong>. No external dataset or radiologist-led validation yet.</p></div>
+    </div>
+    <div class="mf-actions"><a class="mf-btn mf-btn-primary" href="{{ '/publications/#cxrg-svlm' | relative_url }}">Publication details</a><a class="mf-btn" href="https://doi.org/10.5281/zenodo.23286489">Reproducibility artifact</a></div>
+  </section>
+  <section class="mf-section"><h2>Future Research Interests (PhD)</h2><p class="mf-small-note">The following are directions I hope to investigate further, not claims of completed research expertise.</p>
+    <div class="mf-mini-grid">
+      <div class="mf-mini"><i class="fa-solid fa-arrows-rotate"></i>Robustness &amp; domain adaptation</div>
+      <div class="mf-mini"><i class="fa-solid fa-gauge-high"></i>Uncertainty estimation &amp; calibration</div>
+      <div class="mf-mini"><i class="fa-solid fa-user-doctor"></i>Clinician-in-the-loop evaluation</div>
+      <div class="mf-mini"><i class="fa-solid fa-diagram-project"></i>Images, text &amp; structured clinical data</div>
+      <div class="mf-mini"><i class="fa-solid fa-microscope"></i>Computational pathology</div>
+      <div class="mf-mini"><i class="fa-solid fa-globe"></i>Multilingual AI for South Asian languages</div>
+    </div>
+  </section>
+</div>

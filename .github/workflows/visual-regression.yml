@@ -59,11 +59,6 @@ jobs:
       - name: Install JS deps 📦
         run: npm ci
 
-      - name: Prepare baseline worktree (v0.16.3) 🧱
-        run: |
-          git worktree add ../al-folio-baseline v0.16.3
-          (cd ../al-folio-baseline && bundle install && npm ci)
-
       - name: Install Jupyter + ImageMagick runtime deps 🧰
         run: |
           sudo apt-get update
@@ -73,52 +68,48 @@ jobs:
       - name: Install Playwright browser 🧪
         run: npx playwright install --with-deps chromium webkit
 
-      - name: Run visual parity checks 👀
+      - name: Render and test academic pages (desktop and mobile) 🧪
         env:
-          BASELINE_URL: http://127.0.0.1:4100
           NO_WEBSERVER: "1"
         run: |
           set -euo pipefail
           export PATH="$HOME/.local/bin:$PATH"
 
-          (cd ../al-folio-baseline && bundle exec jekyll serve --host 127.0.0.1 --port 4100 --baseurl /al-folio --quiet > /tmp/jekyll-baseline.log 2>&1) &
-          BASELINE_PID=$!
-          (bundle exec jekyll serve --host 127.0.0.1 --port 4000 --baseurl /al-folio --quiet > /tmp/jekyll-candidate.log 2>&1) &
+          bundle exec jekyll serve --host 127.0.0.1 --port 4000 --baseurl /al-folio --quiet > /tmp/jekyll-candidate.log 2>&1 &
           CANDIDATE_PID=$!
-
-          cleanup() {
-            kill "$BASELINE_PID" "$CANDIDATE_PID" >/dev/null 2>&1 || true
-          }
-          trap cleanup EXIT
+          trap 'kill "$CANDIDATE_PID" >/dev/null 2>&1 || true' EXIT
 
           READY=0
-          for _ in {1..150}; do
-            if curl -fsS http://127.0.0.1:4000/al-folio/ >/dev/null && curl -fsS http://127.0.0.1:4100/al-folio/ >/dev/null; then
+          for _ in {1..90}; do
+            if curl -fsS http://127.0.0.1:4000/al-folio/ >/dev/null; then
               READY=1
               break
             fi
-
-            if ! kill -0 "$BASELINE_PID" >/dev/null 2>&1 || ! kill -0 "$CANDIDATE_PID" >/dev/null 2>&1; then
+            if ! kill -0 "$CANDIDATE_PID" >/dev/null 2>&1; then
               echo "Jekyll server exited before becoming ready."
-              echo "--- baseline log ---"
-              cat /tmp/jekyll-baseline.log || true
-              echo "--- candidate log ---"
               cat /tmp/jekyll-candidate.log || true
               exit 1
             fi
             sleep 2
           done
-
           if [ "$READY" -ne 1 ]; then
-            echo "Timed out waiting for Jekyll servers (5 minutes)."
-            echo "--- baseline log ---"
-            cat /tmp/jekyll-baseline.log || true
-            echo "--- candidate log ---"
+            echo "Jekyll candidate did not start."
             cat /tmp/jekyll-candidate.log || true
             exit 1
           fi
 
-          npm run test:visual -- --reporter=line
+          # Run actual functional and responsive tests. No historical
+          # visual parity check: this PR intentionally redesigns the site.
+          npx playwright test --config test/visual/playwright.config.js test/visual/academic.spec.js --reporter=line
+
+      - name: Upload academic page screenshots 🖼️
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: academic-website-desktop-mobile-previews
+          path: preview-screenshots/*.png
+          if-no-files-found: warn
+          retention-days: 14
 
       - name: Upload Playwright report 📄
         if: always()
@@ -134,6 +125,5 @@ jobs:
         with:
           name: jekyll-visual-logs
           path: |
-            /tmp/jekyll-baseline.log
             /tmp/jekyll-candidate.log
           if-no-files-found: ignore

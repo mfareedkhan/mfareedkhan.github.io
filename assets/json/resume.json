@@ -1,12 +1,12 @@
 {
   "basics": {
     "name": "Muhammad Fareed",
-    "label": "Machine Learning & Artificial Intelligence Researcher",
+    "label": "AI/ML Researcher & Engineer",
     "image": "",
     "email": "mfareedkhan012@gmail.com",
     "phone": "+92 320 4496708",
     "url": "https://mfareedkhan.github.io",
-    "summary": "Machine learning and AI researcher working on efficient, deployable AI — parameter-efficient fine-tuning (QLoRA/LoRA), quantization, and small/multimodal models that run on modest hardware. Healthcare and low-resource-language AI are the primary proving grounds; the methods generalize across domains.",
+    "summary": "AI/ML researcher and engineer focused on efficient, trustworthy and multimodal AI, especially medical vision-language models, clinical report generation, parameter-efficient adaptation, responsible healthcare AI and low-resource multilingual NLP. MS Data Science (Apr 2026), CGPA 4.0/4.0, first position in graduating cohort.",
     "location": {
       "city": "Lahore",
       "countryCode": "PK",
@@ -36,9 +36,9 @@
       "url": "",
       "area": "Data Science",
       "studyType": "MS",
-      "startDate": "2024",
-      "endDate": "2026",
-      "score": "CGPA 4.0/4.0 — batch topper (first position, Spring 2024 cohort); full scholarship throughout. Dean's Honor List (Certificate of Merit Achievement), Spring 2024. Thesis: Retrieval-Augmented, Parameter-Efficient Fine-Tuning of a Vision–Language Model for Chest X-ray Report Generation (supervisor: Dr. Jamal Uddin).",
+      "startDate": "2024-02",
+      "endDate": "2026-04",
+      "score": "CGPA 4.0/4.0; first position in graduating cohort; top 1% merit-based scholarship covering 50% of tuition throughout MS; Dean's Honor / Certificate of Merit Achievement. MS thesis supervised by Dr. Jamal Uddin: CXRG-SVLM.",
       "courses": [
         "Machine Learning (A+)",
         "Research Methods (A+)",
@@ -94,84 +94,85 @@
   ],
   "publications": [
     {
+      "name": "CXRG-SVLM: A Parameter-Efficient Small Vision-Language Model for Multi-View Chest X-ray Report Generation in Resource-Constrained Environments",
+      "publisher": "Scientific Reports — accepted for publication (2026)",
+      "releaseDate": "2026",
+      "url": "",
+      "summary": "Fareed, M., Uddin, J., Sayyid, A. H., Ahmed, A., & Sattar, M. A. Multi-view RAD-DINO/Qwen2.5-3B medical vision-language model, trained with QLoRA; 38.114M trainable parameters (1.91%). IU-Xray evaluation only; no external or radiologist-led validation. Reproducibility artifact DOI: 10.5281/zenodo.23286489."
+    },
+    {
       "name": "A Systematic Review of Ethical Considerations of Large Language Models in Healthcare and Medicine",
-      "publisher": "Frontiers in Digital Health (IF 3.8, Q1) — Published, first author",
+      "publisher": "Frontiers in Digital Health, 7:1653631 — published",
       "releaseDate": "2025",
       "url": "https://doi.org/10.3389/fdgth.2025.1653631",
-      "summary": "Fareed, M., Fatima, M., Uddin, J., Ahmed, A., & Sattar, M. A. A PRISMA 2020 systematic review of ethical risks in deploying LLMs in healthcare; 27 studies included; proposes a four-layer ethical integration framework."
+      "summary": "Fareed, M., Fatima, M., Uddin, J., Ahmed, A., & Sattar, M. A. First-author peer-reviewed systematic review synthesizing 27 studies from 316 screened records."
     },
     {
-      "name": "CXRG-SVLM: A Parameter-Efficient Small Vision-Language Model for Multi-View Chest X-ray Report Generation in Resource-Constrained Environments",
-      "publisher": "Scientific Reports — under review (MS thesis work), first author",
+      "name": "LSTM-Based Deep Learning Models in Healthcare and Medicine: A Systematic Review",
+      "publisher": "PLOS ONE — submitted; with editor (not published)",
       "releaseDate": "2026",
       "url": "",
-      "summary": "Fareed, M., Uddin, J., Ahmed, A., Sayyid, A. H., & Sattar, M. A. Small VLM generating chest X-ray reports on a single 16 GB GPU; 4-bit QLoRA (0.97% trainable); ROUGE-L 0.3116, METEOR 0.2530, clinical-entity F1 0.4867."
+      "summary": "Fareed, M., Uddin, J., Ahmed, A., Nauman, M. A., Khan, N., Billah, M., & Sattar, M. A. First-author systematic review of approximately 100 studies."
     },
     {
-      "name": "Optimizing Multilingual BERT for Punjabi Sentiment Analysis using PEFT Techniques",
-      "publisher": "Computers, Materials & Continua (CMC), Tech Science Press — under review, co-author",
+      "name": "PEFT-mBERT: A Resource-Efficient Transformer-Based Encoder via Low-Rank and Activation-Based Adaption for Punjabi Sentiment Analysis",
+      "publisher": "Manuscript in revision / preparation",
       "releaseDate": "2026",
       "url": "",
-      "summary": "Ahmed, A., Riaz, S., & Fareed, M. (third author). First systematic PEFT benchmark for Punjabi sentiment analysis; LoRA 85% accuracy at 1.07% trainable parameters."
+      "summary": "Ahmed, A., Riaz, S., & Fareed, M. Work on parameter-efficient multilingual BERT adaptation for Punjabi sentiment analysis."
     },
     {
-      "name": "A Systematic Review of LSTM-Based Deep Learning Models in Healthcare and Medicine",
-      "publisher": "In preparation (target: Frontiers) — not yet submitted, first author",
+      "name": "Hybrid CNN–Transformer Based Diabetic Retinopathy Detection with Explainable AI Using Multi-Dataset Fundus Images",
+      "publisher": "Manuscript in preparation",
       "releaseDate": "2026",
       "url": "",
-      "summary": "Fareed, M., Uddin, J., Ahmed, A., Nauman, M. A., Khan, N., Billah, M., & Sattar, M. A. PRISMA 2020 systematic review of LSTM applications across healthcare; 101 studies; identifies six advancement clusters."
+      "summary": "Mir, S. S., Uddin, J., & Fareed, M. Collaborative research on multi-dataset retinal-image analysis and explainable AI."
     }
   ],
   "work": [
     {
-      "name": "Govt. Elementary School, Attari Saroba, Lahore",
-      "position": "Science & Mathematics Teacher (BPS-14)",
-      "url": "",
+      "name": "Excellence Delivered (ExD), Lahore",
+      "position": "Management Trainee Officer — AI/ML",
+      "startDate": "2026-09",
+      "endDate": "",
+      "summary": "Backend AI engineering for CONCORD.AI, integrating APIs and LLM capabilities for natural-language interaction with documents within role-based access workflows.",
+      "highlights": []
+    },
+    {
+      "name": "School Education Department, Government of Punjab",
+      "position": "Science & Mathematics Teacher — PST, BPS-14",
       "startDate": "2018",
       "endDate": "",
-      "summary": "Substantive permanent civil-service post (awarded by competitive examination), held concurrently with MS studies, thesis research, and four peer-reviewed papers (2024–2026).",
+      "summary": "Teaching science and mathematics, communicating technical and quantitative concepts to diverse learners.",
       "highlights": []
     },
     {
       "name": "Digiversity Training Institute, Lahore",
       "position": "Digital Marketing & Web Development Trainer",
-      "url": "",
       "startDate": "2022",
       "endDate": "2023",
       "summary": "",
       "highlights": []
     },
     {
-      "name": "Converrsion Marketing Agency, Lahore",
-      "position": "Social Media Marketing Manager",
-      "url": "",
-      "startDate": "2021",
-      "endDate": "2022",
-      "summary": "",
-      "highlights": []
-    },
-    {
       "name": "Leads Group of Colleges, Lahore",
-      "position": "Mathematics & Physics Instructor (intermediate & undergraduate)",
-      "url": "",
+      "position": "Mathematics & Physics Instructor",
       "startDate": "2015",
       "endDate": "2017",
-      "summary": "",
+      "summary": "Taught Linear Algebra and Probability & Statistics to BS IT/CS students and mathematics and physics at intermediate level.",
       "highlights": []
     },
     {
       "name": "Independent",
-      "position": "Private O/A-Level Mathematics Tutor",
-      "url": "",
+      "position": "Private Mathematics Tutor",
       "startDate": "2014",
       "endDate": "2015",
-      "summary": "",
+      "summary": "O- and A-Level mathematics tutoring.",
       "highlights": []
     },
     {
       "name": "Yasin Public High School, Lahore",
-      "position": "Science & Mathematics Teacher (matriculation)",
-      "url": "",
+      "position": "Science & Mathematics Teacher",
       "startDate": "2012",
       "endDate": "2014",
       "summary": "",
@@ -180,45 +181,33 @@
   ],
   "awards": [
     {
-      "title": "Inaugural cohort — AI-Driven Enterprise Product Development Programme",
-      "date": "2025",
-      "awarder": "Prime Minister's Youth Programme (PMYP) × Stanford Engineering CGOE",
-      "summary": "Competitive national selection; cohort developed and deployed AI-driven enterprise solutions under Stanford faculty guidance."
+      "title": "First position in MS Data Science graduating cohort",
+      "date": "2026",
+      "awarder": "Riphah International University",
+      "summary": "Graduated in April 2026 with 4.0/4.0 CGPA."
     },
     {
-      "title": "First position (batch topper), MS Data Science — Spring 2024 cohort",
-      "date": "2024",
-      "awarder": "RSCI, Riphah International University",
-      "summary": "CGPA 4.0/4.0; full scholarship throughout."
+      "title": "Top 1% merit-based scholarship",
+      "date": "2024–2026",
+      "awarder": "Riphah International University",
+      "summary": "Covered 50% tuition throughout MS Data Science."
     },
     {
-      "title": "Dean's Honor List (Certificate of Merit Achievement), MS Data Science",
-      "date": "2024",
-      "awarder": "RSCI, Riphah International University",
-      "summary": "Spring 2024."
+      "title": "Dean's Honor / Certificate of Merit Achievement",
+      "date": "",
+      "awarder": "Riphah School of Computing & Innovation",
+      "summary": ""
     },
     {
       "title": "Best Teaching Performance Award",
-      "date": "2024",
-      "awarder": "Progressive Education Network (PEN) NGO, Lahore",
+      "date": "2024-12",
+      "awarder": "Progressive Education Network, Lahore",
       "summary": ""
     },
     {
-      "title": "100% merit scholarship — F.Sc Pre-Engineering",
+      "title": "Merit-based laptop award",
       "date": "2012",
-      "awarder": "Punjab College of Science, Lahore",
-      "summary": "2010–2012."
-    },
-    {
-      "title": "First position at school level — SSC (Science, Grade A+)",
-      "date": "2010",
-      "awarder": "Aziz Memorial Science High School, Lahore",
-      "summary": ""
-    },
-    {
-      "title": "Prime Minister's Laptop Scheme (academic merit)",
-      "date": "2012",
-      "awarder": "Government of Pakistan",
+      "awarder": "CM Punjab Laptop Program",
       "summary": ""
     }
   ],
@@ -250,29 +239,29 @@
   ],
   "skills": [
     {
-      "name": "Programming",
+      "name": "Programming and ML frameworks",
       "level": "",
-      "keywords": ["Python (primary)", "LaTeX"]
+      "keywords": ["Python", "PyTorch", "TensorFlow", "Keras", "Hugging Face Transformers", "Hugging Face PEFT", "Unsloth"]
     },
     {
-      "name": "Frameworks & Libraries",
+      "name": "Multimodal and foundation models",
       "level": "",
-      "keywords": ["PyTorch", "TensorFlow", "Hugging Face Transformers & PEFT", "Keras"]
+      "keywords": ["LLMs", "VLMs", "Transformers", "Medical visual encoders", "Visual-text alignment", "Clinical report generation"]
     },
     {
-      "name": "Efficient Adaptation & Deployment",
+      "name": "Efficient model adaptation",
       "level": "",
-      "keywords": ["QLoRA", "LoRA", "AdaLoRA", "4-bit Quantization", "Knowledge Distillation", "On-premise deployment", "Edge-optimised inference", "Privacy-preserving model design"]
+      "keywords": ["LoRA", "QLoRA", "PEFT", "4-bit quantization", "Transfer learning", "Instruction fine-tuning"]
     },
     {
-      "name": "Modelling & Research Methods",
+      "name": "Research and evaluation",
       "level": "",
-      "keywords": ["Vision–Language Models", "LLMs", "Multimodal Fusion", "Transfer Learning", "PEFT", "NLP", "Computer Vision", "Generative AI", "Systematic Literature Review (PRISMA 2020)"]
+      "keywords": ["ROUGE", "METEOR", "BERTScore", "RaTEScore", "RadGraph-F1", "Clinical entity analysis", "Failure analysis", "PRISMA"]
     },
     {
-      "name": "Infrastructure & Data",
+      "name": "Data and engineering tools",
       "level": "",
-      "keywords": ["Cloud Computing", "DBMS", "SQL", "Google Colab", "CUDA/cuDNN"]
+      "keywords": ["Git/GitHub", "SQL", "NoSQL", "LaTeX", "Tableau", "Power BI", "Gradio", "LLM/API integration"]
     }
   ],
   "languages": [
