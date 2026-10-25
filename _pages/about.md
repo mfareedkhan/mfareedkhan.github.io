@@ -1,8 +1,6 @@
 ---
 layout: about
 title: home
-nav: true
-nav_order: 1
 permalink: /
 subtitle: AI/ML Researcher & Engineer · Multimodal Healthcare AI · Efficient & Trustworthy Deep Learning
 
