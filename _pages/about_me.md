@@ -2,8 +2,7 @@
 layout: page
 title: about
 permalink: /about/
-nav: true
-nav_order: 7
+nav: false
 description: The journey, the teaching record, and the credentials behind the research.
 ---
 
@@ -15,7 +14,7 @@ The thread running through all of it is a preference for work that reaches peopl
 
 ## Teaching & experience
 
-I have **8+ years of teaching experience**, currently as a Science & Mathematics teacher on a **BPS-14 substantive civil-service post** (awarded by competitive examination) — held concurrently with my MS studies, thesis, and four peer-reviewed papers. I have also taught at intermediate and undergraduate level and trained professionals in digital skills.
+I have **8+ years of teaching experience**, currently as a Science & Mathematics teacher on a **BPS-14 substantive civil-service post** (awarded by competitive examination) — held concurrently with my MS studies and research, including peer-reviewed and accepted work. I have also taught at intermediate and undergraduate level and trained professionals in digital skills.
 
 I received the **Best Teaching Performance Award** from the Progressive Education Network (PEN) NGO, Lahore (2024). Beyond the classroom, I served as **Vice President of the Tameer Kadah Foundation** (2018–2020), supporting welfare and development initiatives for children with physical and cognitive disabilities.
 
