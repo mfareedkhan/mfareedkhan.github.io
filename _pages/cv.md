@@ -16,12 +16,12 @@ description: Curriculum vitae — Muhammad Fareed, AI/ML researcher and engineer
       <ol class="mf-timeline">
         <li><article class="mf-card"><span class="mf-period">Feb 2024 – Apr 2026</span><h3>MS in Data Science</h3><p>Riphah International University, Lahore Campus</p><p><strong>CGPA 4.0/4.0 · First position</strong> in graduating cohort; top 1% merit-based scholarship (50% tuition); Dean's Honor / Certificate of Merit Achievement. Thesis supervisor: <a href="https://scholar.google.com/citations?user=334NBuAAAAAJ&amp;hl=en">Dr. Jamal Uddin</a>.</p></article></li>
         <li><article class="mf-card"><span class="mf-period">Oct 2021 – Mar 2024</span><h3>B.Ed (Secondary), 1.5 Year</h3><p>Virtual University of Pakistan · ICT in Education</p></article></li>
-        <li><article class="mf-card"><span class="mf-period">2012 – 2016</span><h3>BS (Honors) in Mathematics</h3><p>University of Education, Township Campus, Lahore · CGPA 2.64/4.0</p></article></li>
+        <li><article class="mf-card"><span class="mf-period">2012 – 2016</span><h3>BS (Honors) in Mathematics</h3><p>University of Education, Township Campus, Lahore</p></article></li>
       </ol>
     </section>
     <section class="mf-section"><h2><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Professional Experience</h2>
       <ol class="mf-timeline">
-        <li><article class="mf-card"><span class="mf-period">Sep 2026 – Present</span><h3>Management Trainee Officer — AI/ML</h3><p>Excellence Delivered (ExD), Lahore</p><p>Backend AI engineering; contributions to CONCORD.AI, LLM and API integration for document interaction within role-based access workflows.</p></article></li>
+        <li><article class="mf-card"><span class="mf-period">Sep 2026 – Present</span><h3>Management Trainee Officer — AI/ML</h3><p>Excellence Delivered (ExD), Lahore</p><p>Transform raw data into model-ready datasets through data engineering, EDA, and feature engineering; analyze external patterns, select relevant features, and train, test, evaluate, and deploy forecasting models.</p></article></li>
         <li><article class="mf-card"><span class="mf-period">2018 – Present</span><h3>Science &amp; Mathematics Teacher — PST, BPS-14</h3><p>School Education Department, Government of Punjab</p></article></li>
         <li><article class="mf-card"><span class="mf-period">2022 – 2023</span><h3>Digital Marketing &amp; Web Development Trainer</h3><p>Digiversity Training Institute, Lahore</p></article></li>
         <li><article class="mf-card"><span class="mf-period">2015 – 2017</span><h3>Mathematics &amp; Physics Instructor</h3><p>Leads Group of Colleges, Lahore</p></article></li>
