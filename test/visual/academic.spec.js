@@ -38,7 +38,9 @@ for (const route of routes) {
 
 test("publication statuses and links are accurate", async ({ page }) => {
   await page.goto("/al-folio/publications/");
-  await expect(page.getByText("Accepted · 2026", { exact: true })).toBeVisible();
+  await expect(page.getByText("Published · 2026", { exact: true })).toBeVisible();
+  await expect(page.locator('a[href*="s41598-026-77203-3"]')).toHaveCount(2);
+  await expect(page.getByText("Accepted · 2026", { exact: true })).toHaveCount(0);
   await expect(page.getByText("Published · 2025", { exact: true })).toBeVisible();
   await expect(page.getByText("Submitted · With editor", { exact: true })).toBeVisible();
   await expect(page.getByText("Revision / Preparation", { exact: true })).toBeVisible();
