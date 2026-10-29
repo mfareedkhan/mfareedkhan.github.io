@@ -15,7 +15,8 @@ done
 
 grep -q "Research Highlights" "$site/index.html"
 grep -q "CXRG-SVLM" "$site/research/index.html"
-grep -q "Accepted" "$site/publications/index.html"
+grep -q "Published" "$site/publications/index.html"
+grep -q "s41598-026-77203-3" "$site/publications/index.html"
 grep -q "Scientific Reports" "$site/publications/index.html"
 grep -q "PLOS ONE" "$site/publications/index.html"
 grep -q "Curriculum Vitae" "$site/cv/index.html"
