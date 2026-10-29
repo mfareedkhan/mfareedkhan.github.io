@@ -97,7 +97,7 @@
       "name": "CXRG-SVLM: A Parameter-Efficient Small Vision-Language Model for Multi-View Chest X-ray Report Generation in Resource-Constrained Environments",
       "publisher": "Scientific Reports — published 29 October 2026",
       "releaseDate": "2026-10-29",
-      "url": "https://www.nature.com/articles/s41598-026-77203-3"
+      "url": "https://www.nature.com/articles/s41598-026-77203-3",
       "summary": "Fareed, M., Uddin, J., Sayyid, A. H., Ahmed, A., & Sattar, M. A. Multi-view RAD-DINO/Qwen2.5-3B medical vision-language model, trained with QLoRA; 38.114M trainable parameters (1.91%). IU-Xray evaluation only; no external or radiologist-led validation. Reproducibility artifact DOI: 10.5281/zenodo.23286489."
     },
     {
