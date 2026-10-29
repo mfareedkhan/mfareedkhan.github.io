@@ -10,7 +10,7 @@ description: Curriculum vitae — Muhammad Fareed, AI/ML researcher and engineer
 <link rel="stylesheet" href="{{ '/assets/css/academic.css' | relative_url }}">
 <div class="mf-wrap">
   <div class="mf-section-head"><h1>Curriculum Vitae</h1><a class="mf-btn" href="{{ '/assets/pdf/muhammad_fareed_cv.pdf' | relative_url }}" download><i class="fa-solid fa-file-pdf" aria-hidden="true"></i> Download CV (PDF)</a></div>
-  <p class="mf-lead">Academic and professional background in <strong>multimodal healthcare AI, medical vision-language modeling, efficient deep learning, and responsible AI</strong>. I completed my MS in Data Science with a <strong>4.0/4.0 CGPA and first position</strong>, and my research includes first-author accepted and published papers in medical AI and healthcare LLM ethics.</p>
+  <p class="mf-lead">Academic and professional background in <strong>multimodal healthcare AI, medical vision-language modeling, efficient deep learning, and responsible AI</strong>. I completed my MS in Data Science with a <strong>4.0/4.0 CGPA and first position</strong>, and my research includes first-author published papers in medical AI and healthcare LLM ethics.</p>
   <div class="mf-columns mf-section"><div>
     <section class="mf-section"><h2><i class="fa-solid fa-building-columns" aria-hidden="true"></i> Education</h2>
       <ol class="mf-timeline">
@@ -29,7 +29,7 @@ description: Curriculum vitae — Muhammad Fareed, AI/ML researcher and engineer
         <li><article class="mf-card"><span class="mf-period">2012 – 2014</span><h3>Science &amp; Mathematics Teacher</h3><p>Yasin Public High School, Lahore</p></article></li>
       </ol>
     </section>
-    <section class="mf-section"><h2><i class="fa-solid fa-flask" aria-hidden="true"></i> Research &amp; Publications</h2><p>My research includes <strong>CXRG-SVLM</strong>, an efficient medical vision-language model accepted for publication in <em>Scientific Reports</em>, and a published first-author systematic review in <em>Frontiers in Digital Health</em> proposing an ethical framework for healthcare LLMs. Additional scholarly work covers LSTM-based healthcare AI, explainable diabetic-retinopathy analysis, and parameter-efficient multilingual NLP.</p><div class="mf-actions"><a class="mf-btn" href="{{ '/publications/' | relative_url }}">Publications and statuses</a><a class="mf-btn" href="{{ '/research/' | relative_url }}">Research details</a></div></section>
+    <section class="mf-section"><h2><i class="fa-solid fa-flask" aria-hidden="true"></i> Research &amp; Publications</h2><p>My research includes <strong>CXRG-SVLM</strong>, an efficient medical vision-language model published in <em>Scientific Reports</em> (2026), and a published first-author systematic review in <em>Frontiers in Digital Health</em> proposing an ethical framework for healthcare LLMs. Additional scholarly work covers LSTM-based healthcare AI, explainable diabetic-retinopathy analysis, and parameter-efficient multilingual NLP.</p><div class="mf-actions"><a class="mf-btn" href="{{ '/publications/' | relative_url }}">Publications and statuses</a><a class="mf-btn" href="{{ '/research/' | relative_url }}">Research details</a></div></section>
   </div>
   <aside>
     <section class="mf-section"><h2><i class="fa-solid fa-gears" aria-hidden="true"></i> Technical Skills</h2>
