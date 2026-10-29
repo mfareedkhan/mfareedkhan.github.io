@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Thesis research **CXRG-SVLM** was submitted to _Scientific Reports_. It was subsequently **accepted for publication in 2026**.
+Thesis research **CXRG-SVLM** was submitted to _Scientific Reports_. It was subsequently **published on 29 October 2026**. [Read the paper](https://www.nature.com/articles/s41598-026-77203-3).
