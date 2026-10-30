@@ -36,17 +36,23 @@ for (const route of routes) {
   }
 }
 
-test("publication statuses and links are accurate", async ({ page }) => {
+test("publication sections and simplified paper links are accurate", async ({ page }) => {
   await page.goto("/al-folio/publications/");
-  await expect(page.getByText("Published · 2026", { exact: true })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Published Research" })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Submitted", exact: true })).toBeVisible();
+  await expect(page.locator("#published .mf-publication")).toHaveCount(2);
+  await expect(page.locator("#published .mf-actions .mf-btn")).toHaveCount(2);
+  await expect(page.locator("#published .mf-actions .mf-btn").first()).toHaveText("Read paper");
   await expect(page.locator('a[href*="s41598-026-77203-3"]')).toHaveCount(2);
-  await expect(page.getByText("Accepted · 2026", { exact: true })).toHaveCount(0);
-  await expect(page.getByText("Published · 2025", { exact: true })).toBeVisible();
-  await expect(page.getByText("Submitted · With editor", { exact: true })).toBeVisible();
-  await expect(page.getByText("Revision / Preparation", { exact: true })).toBeVisible();
-  await expect(page.locator('a[href*="10.5281/zenodo.23286489"]')).toHaveCount(1);
+  await expect(page.locator(".mf-publication .mf-pill")).toHaveCount(0);
+  await expect(page.getByText("Zenodo artifact", { exact: true })).toHaveCount(0);
 });
 
+test("projects shows only three distinct AI engineering projects", async ({ page }) => {
+  await page.goto("/al-folio/projects/");
+  await expect(page.locator(".mf-project-grid .mf-project")).toHaveCount(3);
+  await expect(page.getByRole("heading", { name: "Roman Urdu Conversational Model" })).toBeVisible();
+});
 test("homepage uses academic highlights, not outdated metrics", async ({ page }) => {
   await page.goto("/al-folio/");
   await expect(page.getByRole("heading", { name: "CXRG-SVLM", exact: true })).toBeVisible();

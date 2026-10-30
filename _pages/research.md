@@ -30,13 +30,13 @@ description: Research in multimodal healthcare AI, medical VLMs, efficient adapt
       <div class="mf-card"><span class="mf-icon"><i class="fa-solid fa-chart-line"></i></span><h3>Efficiency</h3><p><strong>1,992,450,144</strong> framework-reported parameters; <strong>38,114,144 trainable (1.91%)</strong>. Eight-epoch training required approximately 3.19 hours on a single NVIDIA Tesla T4 (16 GB).</p></div>
       <div class="mf-card"><span class="mf-icon"><i class="fa-solid fa-stethoscope"></i></span><h3>Evaluation &amp; Limitations</h3><p>IU-Xray held-out evaluation: ROUGE-L <strong>0.3527</strong>, BERTScore-F1 <strong>0.4361</strong>, RaTEScore <strong>0.6001</strong>, RadGraph-F1 <strong>0.3472</strong>. Evaluation is limited to IU-Xray with complementary lexical, semantic, and radiology-specific metrics. External dataset and radiologist-led validation have not yet been performed.</p></div>
     </div>
-    <div class="mf-actions"><a class="mf-btn mf-btn-primary" href="https://www.nature.com/articles/s41598-026-77203-3">Read published paper · DOI</a><a class="mf-btn" href="{{ '/publications/#cxrg-svlm' | relative_url }}">Publication details</a><a class="mf-btn" href="https://doi.org/10.5281/zenodo.23286489">Reproducibility artifact</a></div>
+    <div class="mf-actions"><a class="mf-btn mf-btn-primary" href="https://www.nature.com/articles/s41598-026-77203-3">Read paper</a></div>
   </section>
   <section class="mf-section" id="healthcare-llm-ethics">
     <div class="mf-section-head"><h2>Trustworthy Healthcare AI — Ethical Considerations of LLMs</h2><span class="mf-pill mf-pill-published">Published · Frontiers in Digital Health (2025)</span></div>
     <p>My first-author systematic review, <strong>A Systematic Review of Ethical Considerations of Large Language Models in Healthcare and Medicine</strong>, published in <em>Frontiers in Digital Health</em> (2025), investigates ethical challenges associated with healthcare LLMs. It synthesizes <strong>27 studies from 316 screened records</strong>, examining privacy, bias, transparency, accountability, patient safety, and human oversight.</p>
     <p>A key contribution is a <strong>four-layer ethical framework</strong> encompassing regulatory safeguards, technical safeguards, human oversight, and accountability. This work complements my medical vision-language modeling research by emphasizing the governance and evaluation considerations needed for responsible generative AI in healthcare.</p>
-    <div class="mf-actions"><a class="mf-btn" href="https://doi.org/10.3389/fdgth.2025.1653631">Read published paper · DOI</a></div>
+    <div class="mf-actions"><a class="mf-btn" href="https://doi.org/10.3389/fdgth.2025.1653631">Read paper</a></div>
   </section>
   <section class="mf-section"><h2>Future Research Interests (PhD)</h2><p class="mf-small-note">These are directions for future PhD research, not claims of completed expertise. They include domain generalization, uncertainty calibration, fairness, clinician–AI collaboration, multimodal medical foundation models, computational pathology and segmentation, and efficient multilingual AI.</p>
     <div class="mf-mini-grid">
