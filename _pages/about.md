@@ -53,7 +53,7 @@ latest_posts:
           <span class="mf-pill mf-pill-published">Published · Scientific Reports (2026)</span>
           <h3>CXRG-SVLM</h3>
           <p>A parameter-efficient small vision-language model for multi-view chest X-ray report generation. <strong>38.11M trainable parameters (1.91%)</strong> using 4-bit QLoRA and a frozen medical visual encoder.</p>
-          <div class="mf-actions"><a class="mf-btn" href="https://www.nature.com/articles/s41598-026-77203-3"><i class="fa-regular fa-file-lines"></i> Read published paper</a><a class="mf-btn" href="{{ '/publications/#cxrg-svlm' | relative_url }}">Publication details</a><a class="mf-btn" href="https://doi.org/10.5281/zenodo.23286489">Reproducibility artifact</a></div>
+          <div class="mf-actions"><a class="mf-btn" href="https://www.nature.com/articles/s41598-026-77203-3"><i class="fa-regular fa-file-lines"></i> Read paper</a></div>
         </div>
       </article>
       <article class="mf-card">
