@@ -275,14 +275,6 @@ body {
   color: #237044;
   background: #e6f6eb;
 }
-.mf-pill-submitted {
-  color: #815418;
-  background: #fff1d9;
-}
-.mf-pill-prep {
-  color: #486681;
-  background: #edf2f8;
-}
 .mf-vision {
   display: flex;
   gap: 1rem;
