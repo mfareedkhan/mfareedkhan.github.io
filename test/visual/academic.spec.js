@@ -53,6 +53,13 @@ test("projects shows only three distinct AI engineering projects", async ({ page
   await expect(page.locator(".mf-project-grid .mf-project")).toHaveCount(3);
   await expect(page.getByRole("heading", { name: "Roman Urdu Conversational Model" })).toBeVisible();
 });
+test("shared footer has the exact MS Data Science copyright", async ({ page }) => {
+  await page.goto("/al-folio/");
+  const footer = page.locator("footer");
+  await expect(footer).toContainText("Copyright 2026 Muhammad Fareed, MS Data Science");
+  await expect(footer).not.toContainText("Research portfolio built with Jekyll");
+});
+
 test("homepage uses academic highlights, not outdated metrics", async ({ page }) => {
   await page.goto("/al-folio/");
   await expect(page.getByRole("heading", { name: "CXRG-SVLM", exact: true })).toBeVisible();
