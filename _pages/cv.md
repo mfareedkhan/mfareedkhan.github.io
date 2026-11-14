@@ -21,6 +21,7 @@ description: Curriculum vitae — Muhammad Fareed, AI/ML researcher and engineer
     </section>
     <section class="mf-section"><h2><i class="fa-solid fa-briefcase" aria-hidden="true"></i> Professional Experience</h2>
       <ol class="mf-timeline">
+        <li><article class="mf-card"><span class="mf-period">Nov 2026 – Present</span><h3>Visiting Lecturer — Computer Vision</h3><p>Riphah International University, Lahore Campus</p><p>Teaching Computer Vision to undergraduate students in the <strong>BS Artificial Intelligence (BS-AI)</strong> programme.</p></article></li>
         <li><article class="mf-card"><span class="mf-period">Sep 2026 – Present</span><h3>Management Trainee Officer — AI/ML</h3><p>Excellence Delivered (ExD), Lahore</p><p>Transform raw data into model-ready datasets through data engineering, EDA, and feature engineering; analyze external patterns, select relevant features, and train, test, evaluate, and deploy forecasting models.</p></article></li>
         <li><article class="mf-card"><span class="mf-period">2018 – Present</span><h3>Science &amp; Mathematics Teacher — PST, BPS-14</h3><p>School Education Department, Government of Punjab</p></article></li>
         <li><article class="mf-card"><span class="mf-period">2022 – 2023</span><h3>Digital Marketing &amp; Web Development Trainer</h3><p>Digiversity Training Institute, Lahore</p></article></li>

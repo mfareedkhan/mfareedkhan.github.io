@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - "assets/**"
+      - "scripts/patch_cv_pdf.py"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -34,6 +35,7 @@ on:
       - main
     paths:
       - "assets/**"
+      - "scripts/patch_cv_pdf.py"
       - "**.bib"
       - "**.html"
       - "**.js"
@@ -77,6 +79,10 @@ jobs:
         with:
           python-version: "3.13"
           cache: "pip" # caching pip dependencies
+      - name: Refresh downloadable CV PDF 🧾
+        run: |
+          pip install pymupdf
+          python scripts/patch_cv_pdf.py
       - name: Setup Node 🧰
         uses: actions/setup-node@v4
         with:
